@@ -1,6 +1,6 @@
 {
-  "session_id": "session_20260524_022200_637833",
-  "timestamp": "2026-05-24T02:22:00",
+  "session_id": "session_20260524_023003_911710",
+  "timestamp": "2026-05-24T02:30:03",
   "session_type": "adaptive",
   "sections": [
     6,
@@ -20,7 +20,7 @@
   ],
   "questions": [
     {
-      "question_id": "q_9a976da7",
+      "question_id": "q_1991bb7f",
       "section_id": 6,
       "topic": "Safehouse Provisioning",
       "question": "According to Section 6, which statement best matches the topic 'Safehouse Provisioning'?",
@@ -39,7 +39,7 @@
       "clarification": "Wrong. Correct answer is A: SLATEFALL is administratively assigned to the Andean Operations Bureau under the Operations Directorate.. Clarification: SLATEFALL is administratively assigned to the Andean Operations Bureau under the Operations Directorate."
     },
     {
-      "question_id": "q_4d9f0d83",
+      "question_id": "q_46133226",
       "section_id": 6,
       "topic": "Cell Halcón",
       "question": "According to Section 6, which statement best matches the topic 'Cell Halcón'?",
@@ -58,7 +58,7 @@
       "clarification": "Correct."
     },
     {
-      "question_id": "q_742d60a7",
+      "question_id": "q_7ee7f773",
       "section_id": 6,
       "topic": "Allies, Networks, and Known Affiliations",
       "question": "According to Section 6, which statement best matches the topic 'Allies, Networks, and Known Affiliations'?",
@@ -77,7 +77,7 @@
       "clarification": "Correct."
     },
     {
-      "question_id": "q_009835ff",
+      "question_id": "q_dc202992",
       "section_id": 6,
       "topic": "Safehouse Provisioning",
       "question": "In Section 6, what is the most accurate detail about 'Safehouse Provisioning'?",
@@ -96,7 +96,7 @@
       "clarification": "Wrong. Correct answer is A: Raúl Vendrame Field Medic Civilian 18 Jan 2023 The cell is rated for Tier 4 engagements and has logged 47 operations as a complete unit through 31 December 2025.. Clarification: Raúl Vendrame Field Medic Civilian 18 Jan 2023 The cell is rated for Tier 4 engagements and has logged 47 operations as a complete unit through 31 December 2025."
     },
     {
-      "question_id": "q_d585ac22",
+      "question_id": "q_307d4ea9",
       "section_id": 6,
       "topic": "Allies, Networks, and Known Affiliations",
       "question": "In Section 6, what is the most accurate detail about 'Allies, Networks, and Known Affiliations'?",
@@ -115,7 +115,7 @@
       "clarification": "Correct."
     },
     {
-      "question_id": "q_df62f996",
+      "question_id": "q_cd23a37c",
       "section_id": 8,
       "topic": "Known Bases, Safehouses, and Operational Territory",
       "question": "According to Section 8, which statement best matches the topic 'Known Bases, Safehouses, and Operational Territory'?",
@@ -134,7 +134,7 @@
       "clarification": "Correct."
     },
     {
-      "question_id": "q_9e343a62",
+      "question_id": "q_839a9460",
       "section_id": 8,
       "topic": "Known Bases, Safehouses, and Operational Territory",
       "question": "In Section 8, what is the most accurate detail about 'Known Bases, Safehouses, and Operational Territory'?",
@@ -153,7 +153,7 @@
       "clarification": "Wrong. Correct answer is A: Punta Arenas Node redundancy: each cell-led operation requires line-of-comms to at least 2 nodes.. Clarification: Punta Arenas Node redundancy: each cell-led operation requires line-of-comms to at least 2 nodes."
     },
     {
-      "question_id": "q_7fa44580",
+      "question_id": "q_cc0b1844",
       "section_id": 8,
       "topic": "Safehouse Provisioning",
       "question": "In Section 8, what is the most accurate detail about 'Safehouse Provisioning'?",
@@ -172,7 +172,7 @@
       "clarification": "Correct."
     },
     {
-      "question_id": "q_708c365e",
+      "question_id": "q_cbdf8b97",
       "section_id": 8,
       "topic": "Known Bases, Safehouses, and Operational Territory",
       "question": "What is another important focus of Section 8? (4)",
@@ -191,7 +191,7 @@
       "clarification": "Correct."
     },
     {
-      "question_id": "q_d249e170",
+      "question_id": "q_d5a100f9",
       "section_id": 8,
       "topic": "Known Bases, Safehouses, and Operational Territory",
       "question": "What is another important focus of Section 8? (5)",
@@ -210,7 +210,7 @@
       "clarification": "Wrong. Correct answer is A: Known Bases, Safehouses, and Operational Territory. Clarification: Section 8 is titled 'Known Bases, Safehouses, and Operational Territory'."
     },
     {
-      "question_id": "q_133b9a53",
+      "question_id": "q_14841e20",
       "section_id": 9,
       "topic": "Threat Tier Classification",
       "question": "According to Section 9, which statement best matches the topic 'Threat Tier Classification'?",
@@ -229,7 +229,7 @@
       "clarification": "Correct."
     },
     {
-      "question_id": "q_052ad03f",
+      "question_id": "q_d8c90c3f",
       "section_id": 9,
       "topic": "Threat Tier Classification",
       "question": "In Section 9, what is the most accurate detail about 'Threat Tier Classification'?",
@@ -248,7 +248,7 @@
       "clarification": "Correct."
     },
     {
-      "question_id": "q_8ba2de1f",
+      "question_id": "q_f442e1a7",
       "section_id": 9,
       "topic": "Doctrine of Sequential Suspension",
       "question": "According to Section 9, which statement best matches the topic 'Doctrine of Sequential Suspension'?",
@@ -267,7 +267,7 @@
       "clarification": "Wrong. Correct answer is A: Adolfo Yáñez-Ríos, Cell Cóndor); 3 civilians killed Adversary casualties: Tropopausa contained but escaped after 8 hours Notes: Engagement triggered formal articulation of the Doctrine of Sequential Suspension.. Clarification: Adolfo Yáñez-Ríos, Cell Cóndor); 3 civilians killed Adversary casualties: Tropopausa contained but escaped after 8 hours Notes: Engagement triggered formal articulation of the Doctrine of Sequential Suspension."
     },
     {
-      "question_id": "q_dccf3092",
+      "question_id": "q_0d7bd509",
       "section_id": 9,
       "topic": "Cell Halcón",
       "question": "According to Section 9, which statement best matches the topic 'Cell Halcón'?",
@@ -286,7 +286,7 @@
       "clarification": "Correct."
     },
     {
-      "question_id": "q_806fc65f",
+      "question_id": "q_f62bebb1",
       "section_id": 9,
       "topic": "Case Files: Documented Engagements and Incidents",
       "question": "According to Section 9, which statement best matches the topic 'Case Files: Documented Engagements and Incidents'?",
