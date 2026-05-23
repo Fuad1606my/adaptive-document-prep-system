@@ -1,3 +1,56 @@
 {
-  "sessions": []
+  "sessions": [
+    {
+      "session_id": "kb_test_session_001",
+      "timestamp": "2026-05-24T00:25:46",
+      "session_type": "cold_start",
+      "sections": [
+        5,
+        8
+      ],
+      "questions": [
+        {
+          "question_id": "dummy_q_001",
+          "section_id": 5,
+          "topic": "Three-Two-One Rule",
+          "question": "What is the Three-Two-One Rule used for?",
+          "options": {
+            "A": "Managing activations, sightlines, and extraction",
+            "B": "Counting safehouses",
+            "C": "Classifying adversaries",
+            "D": "Selecting medical kits"
+          },
+          "correct_answer": "A",
+          "user_answer": "B",
+          "is_correct": false,
+          "explanation": "The Three-Two-One Rule limits activations, maintains sightlines, and reserves an extraction route."
+        },
+        {
+          "question_id": "dummy_q_002",
+          "section_id": 8,
+          "topic": "Safehouse Provisioning",
+          "question": "What does each safehouse maintain?",
+          "options": {
+            "A": "Only weapons",
+            "B": "30-day rations, backup comms, baton cache, medical supplies, currency, and identity package",
+            "C": "Only vehicles",
+            "D": "No supplies"
+          },
+          "correct_answer": "B",
+          "user_answer": "B",
+          "is_correct": true,
+          "explanation": "The dossier states that safehouses maintain rations, backup comms, baton replacements, medical supplies, currency, and identity packages."
+        }
+      ],
+      "score": {
+        "total": 2,
+        "correct": 1,
+        "wrong": 1,
+        "accuracy": 50.0
+      },
+      "weak_topics": [
+        "Three-Two-One Rule"
+      ]
+    }
+  ]
 }
