@@ -1,10 +1,10 @@
 {
-  "snapshot_created_at": "2026-05-24T00:51:05",
+  "snapshot_created_at": "2026-05-24T02:22:01",
   "total_sessions": 3,
   "recent_sessions": [
     {
-      "session_id": "session_20260524_005105_321136",
-      "timestamp": "2026-05-24T00:51:05",
+      "session_id": "session_20260524_022201_112254",
+      "timestamp": "2026-05-24T02:22:01",
       "session_type": "adaptive",
       "sections": [
         8
@@ -21,8 +21,8 @@
       "question_count": 5
     },
     {
-      "session_id": "session_20260524_005105_014030",
-      "timestamp": "2026-05-24T00:51:05",
+      "session_id": "session_20260524_022200_637833",
+      "timestamp": "2026-05-24T02:22:00",
       "session_type": "adaptive",
       "sections": [
         6,
@@ -43,8 +43,8 @@
       "question_count": 15
     },
     {
-      "session_id": "session_20260524_005104_715246",
-      "timestamp": "2026-05-24T00:51:04",
+      "session_id": "session_20260524_022159_896058",
+      "timestamp": "2026-05-24T02:21:59",
       "session_type": "cold_start",
       "sections": [
         5,

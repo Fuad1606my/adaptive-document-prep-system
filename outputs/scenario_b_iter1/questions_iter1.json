@@ -1,6 +1,6 @@
 {
-  "session_id": "session_20260524_005104_715246",
-  "timestamp": "2026-05-24T00:51:04",
+  "session_id": "session_20260524_022159_896058",
+  "timestamp": "2026-05-24T02:21:59",
   "session_type": "cold_start",
   "sections": [
     5,
@@ -19,7 +19,7 @@
   ],
   "questions": [
     {
-      "question_id": "q_4c3af777",
+      "question_id": "q_71a0f91d",
       "section_id": 5,
       "topic": "Operational Tactics and Combat Doctrine",
       "question": "According to Section 5, which statement best matches the topic 'Operational Tactics and Combat Doctrine'?",
@@ -38,7 +38,7 @@
       "clarification": "Wrong. Correct answer is A: It is now PAMC- recognized doctrine for Class A-2 (Targeted) operatives and forms part of the standard curriculum at the Lima Operational Academy.. Clarification: It is now PAMC- recognized doctrine for Class A-2 (Targeted) operatives and forms part of the standard curriculum at the Lima Operational Academy."
     },
     {
-      "question_id": "q_c7f2706e",
+      "question_id": "q_f8446565",
       "section_id": 5,
       "topic": "Operational Tactics and Combat Doctrine",
       "question": "In Section 5, what is the most accurate detail about 'Operational Tactics and Combat Doctrine'?",
@@ -57,7 +57,7 @@
       "clarification": "Correct."
     },
     {
-      "question_id": "q_a1a820a4",
+      "question_id": "q_6bb6993e",
       "section_id": 5,
       "topic": "Threat Tier Classification",
       "question": "According to Section 5, which statement best matches the topic 'Threat Tier Classification'?",
@@ -76,7 +76,7 @@
       "clarification": "Correct."
     },
     {
-      "question_id": "q_93a42fd3",
+      "question_id": "q_93fc9d12",
       "section_id": 5,
       "topic": "Drop-Tune Manoeuvre",
       "question": "According to Section 5, which statement best matches the topic 'Drop-Tune Manoeuvre'?",
@@ -95,7 +95,7 @@
       "clarification": "Wrong. Correct answer is A: 5.5 The Drop-Tune Manoeuvre Drop-Tune is the standard activation pattern around the contact-exclusion rule (§2.8): 1.. Clarification: 5.5 The Drop-Tune Manoeuvre Drop-Tune is the standard activation pattern around the contact-exclusion rule (§2.8): 1."
     },
     {
-      "question_id": "q_8384c568",
+      "question_id": "q_328ef1a5",
       "section_id": 5,
       "topic": "Cell Halcón",
       "question": "According to Section 5, which statement best matches the topic 'Cell Halcón'?",
@@ -114,7 +114,7 @@
       "clarification": "Correct."
     },
     {
-      "question_id": "q_bc0644a0",
+      "question_id": "q_aab32364",
       "section_id": 8,
       "topic": "Safehouse Provisioning",
       "question": "According to Section 8, which statement best matches the topic 'Safehouse Provisioning'?",
@@ -133,7 +133,7 @@
       "clarification": "Correct."
     },
     {
-      "question_id": "q_1cba38ae",
+      "question_id": "q_ad55cd7f",
       "section_id": 8,
       "topic": "Known Bases, Safehouses, and Operational Territory",
       "question": "According to Section 8, which statement best matches the topic 'Known Bases, Safehouses, and Operational Territory'?",
@@ -152,7 +152,7 @@
       "clarification": "Wrong. Correct answer is A: Two extra-territorial deployments have been authorized since 2019 (Quito 2021, Lima Pan-American Conference 2024).. Clarification: Two extra-territorial deployments have been authorized since 2019 (Quito 2021, Lima Pan-American Conference 2024)."
     },
     {
-      "question_id": "q_e02e4942",
+      "question_id": "q_b2f142f5",
       "section_id": 8,
       "topic": "Known Bases, Safehouses, and Operational Territory",
       "question": "In Section 8, what is the most accurate detail about 'Known Bases, Safehouses, and Operational Territory'?",
@@ -171,7 +171,7 @@
       "clarification": "Correct."
     },
     {
-      "question_id": "q_64e60d2a",
+      "question_id": "q_22489f3f",
       "section_id": 8,
       "topic": "Known Bases, Safehouses, and Operational Territory",
       "question": "What is another important focus of Section 8? (4)",
@@ -190,7 +190,7 @@
       "clarification": "Correct."
     },
     {
-      "question_id": "q_63cfae40",
+      "question_id": "q_de0f716f",
       "section_id": 8,
       "topic": "Known Bases, Safehouses, and Operational Territory",
       "question": "What is another important focus of Section 8? (5)",
