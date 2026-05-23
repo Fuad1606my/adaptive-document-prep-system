@@ -1,0 +1,308 @@
+{
+  "session_id": "session_20260524_004929_761417",
+  "timestamp": "2026-05-24T00:49:29",
+  "session_type": "adaptive",
+  "sections": [
+    6,
+    8,
+    9
+  ],
+  "score": {
+    "total": 15,
+    "correct": 10,
+    "wrong": 5,
+    "accuracy": 66.67
+  },
+  "weak_topics": [
+    "Doctrine of Sequential Suspension",
+    "Known Bases, Safehouses, and Operational Territory",
+    "Safehouse Provisioning"
+  ],
+  "questions": [
+    {
+      "question_id": "q_b6bc3b51",
+      "section_id": 6,
+      "topic": "Safehouse Provisioning",
+      "question": "According to Section 6, which statement best matches the topic 'Safehouse Provisioning'?",
+      "options": {
+        "A": "SLATEFALL is administratively assigned to the Andean Operations Bureau under the Operations Directorate.",
+        "B": "It describes a minor glossary term with no operational relevance.",
+        "C": "It only refers to public media restrictions.",
+        "D": "It refers to a retired equipment archive only."
+      },
+      "correct_answer": "A",
+      "explanation": "SLATEFALL is administratively assigned to the Andean Operations Bureau under the Operations Directorate.",
+      "adaptive_reason": null,
+      "generator": "fallback_rule_based",
+      "user_answer": "B",
+      "is_correct": false,
+      "clarification": "Wrong. Correct answer is A: SLATEFALL is administratively assigned to the Andean Operations Bureau under the Operations Directorate.. Clarification: SLATEFALL is administratively assigned to the Andean Operations Bureau under the Operations Directorate."
+    },
+    {
+      "question_id": "q_84297c6b",
+      "section_id": 6,
+      "topic": "Cell Halcón",
+      "question": "According to Section 6, which statement best matches the topic 'Cell Halcón'?",
+      "options": {
+        "A": "6.2 Cell Halcón Cell Halcón is the four-operative tactical unit under SLATEFALL's command.",
+        "B": "It describes a minor glossary term with no operational relevance.",
+        "C": "It only refers to public media restrictions.",
+        "D": "It refers to a retired equipment archive only."
+      },
+      "correct_answer": "A",
+      "explanation": "6.2 Cell Halcón Cell Halcón is the four-operative tactical unit under SLATEFALL's command.",
+      "adaptive_reason": null,
+      "generator": "fallback_rule_based",
+      "user_answer": "A",
+      "is_correct": true,
+      "clarification": "Correct."
+    },
+    {
+      "question_id": "q_edeb7757",
+      "section_id": 6,
+      "topic": "Allies, Networks, and Known Affiliations",
+      "question": "According to Section 6, which statement best matches the topic 'Allies, Networks, and Known Affiliations'?",
+      "options": {
+        "A": "Composition was finalized 11 October 2022: Member Role Status Joined cell SLATEFALL (Inez Calvache- Renström) Lead Officer Metahuman A-2 1 Aug 2022 Lt.",
+        "B": "It describes a minor glossary term with no operational relevance.",
+        "C": "It only refers to public media restrictions.",
+        "D": "It refers to a retired equipment archive only."
+      },
+      "correct_answer": "A",
+      "explanation": "Composition was finalized 11 October 2022: Member Role Status Joined cell SLATEFALL (Inez Calvache- Renström) Lead Officer Metahuman A-2 1 Aug 2022 Lt.",
+      "adaptive_reason": null,
+      "generator": "fallback_rule_based",
+      "user_answer": "A",
+      "is_correct": true,
+      "clarification": "Correct."
+    },
+    {
+      "question_id": "q_ed4c0f94",
+      "section_id": 6,
+      "topic": "Safehouse Provisioning",
+      "question": "In Section 6, what is the most accurate detail about 'Safehouse Provisioning'?",
+      "options": {
+        "A": "Raúl Vendrame Field Medic Civilian 18 Jan 2023 The cell is rated for Tier 4 engagements and has logged 47 operations as a complete unit through 31 December 2025.",
+        "B": "It describes a minor glossary term with no operational relevance.",
+        "C": "It only refers to public media restrictions.",
+        "D": "It refers to a retired equipment archive only."
+      },
+      "correct_answer": "A",
+      "explanation": "Raúl Vendrame Field Medic Civilian 18 Jan 2023 The cell is rated for Tier 4 engagements and has logged 47 operations as a complete unit through 31 December 2025.",
+      "adaptive_reason": null,
+      "generator": "fallback_rule_based",
+      "user_answer": "B",
+      "is_correct": false,
+      "clarification": "Wrong. Correct answer is A: Raúl Vendrame Field Medic Civilian 18 Jan 2023 The cell is rated for Tier 4 engagements and has logged 47 operations as a complete unit through 31 December 2025.. Clarification: Raúl Vendrame Field Medic Civilian 18 Jan 2023 The cell is rated for Tier 4 engagements and has logged 47 operations as a complete unit through 31 December 2025."
+    },
+    {
+      "question_id": "q_cb425c94",
+      "section_id": 6,
+      "topic": "Allies, Networks, and Known Affiliations",
+      "question": "In Section 6, what is the most accurate detail about 'Allies, Networks, and Known Affiliations'?",
+      "options": {
+        "A": "Léon Marrón-Saavedra Age 64, born Mérida, Venezuela Senior scientist, CBMP Co-author of the Calvache–Marrón Equations Conducts annual scientific re-evaluations of the asset's power (§2.19) Dr.",
+        "B": "It describes a minor glossary term with no operational relevance.",
+        "C": "It only refers to public media restrictions.",
+        "D": "It refers to a retired equipment archive only."
+      },
+      "correct_answer": "A",
+      "explanation": "Léon Marrón-Saavedra Age 64, born Mérida, Venezuela Senior scientist, CBMP Co-author of the Calvache–Marrón Equations Conducts annual scientific re-evaluations of the asset's power (§2.19) Dr.",
+      "adaptive_reason": null,
+      "generator": "fallback_rule_based",
+      "user_answer": "A",
+      "is_correct": true,
+      "clarification": "Correct."
+    },
+    {
+      "question_id": "q_e0c8acb2",
+      "section_id": 8,
+      "topic": "Known Bases, Safehouses, and Operational Territory",
+      "question": "According to Section 8, which statement best matches the topic 'Known Bases, Safehouses, and Operational Territory'?",
+      "options": {
+        "A": "Two extra-territorial deployments have been authorized since 2019 (Quito 2021, Lima Pan-American Conference 2024).",
+        "B": "It only refers to public media restrictions.",
+        "C": "It refers to a retired equipment archive only.",
+        "D": "It is a general historical footnote without tactical use."
+      },
+      "correct_answer": "A",
+      "explanation": "Two extra-territorial deployments have been authorized since 2019 (Quito 2021, Lima Pan-American Conference 2024).",
+      "adaptive_reason": "Focused on previously missed topic: Known Bases, Safehouses, and Operational Territory",
+      "generator": "fallback_rule_based",
+      "user_answer": "A",
+      "is_correct": true,
+      "clarification": "Correct."
+    },
+    {
+      "question_id": "q_f13925ab",
+      "section_id": 8,
+      "topic": "Known Bases, Safehouses, and Operational Territory",
+      "question": "In Section 8, what is the most accurate detail about 'Known Bases, Safehouses, and Operational Territory'?",
+      "options": {
+        "A": "Punta Arenas Node redundancy: each cell-led operation requires line-of-comms to at least 2 nodes.",
+        "B": "It only refers to public media restrictions.",
+        "C": "It refers to a retired equipment archive only.",
+        "D": "It is a general historical footnote without tactical use."
+      },
+      "correct_answer": "A",
+      "explanation": "Punta Arenas Node redundancy: each cell-led operation requires line-of-comms to at least 2 nodes.",
+      "adaptive_reason": "Focused on previously missed topic: Known Bases, Safehouses, and Operational Territory",
+      "generator": "fallback_rule_based",
+      "user_answer": "B",
+      "is_correct": false,
+      "clarification": "Wrong. Correct answer is A: Punta Arenas Node redundancy: each cell-led operation requires line-of-comms to at least 2 nodes.. Clarification: Punta Arenas Node redundancy: each cell-led operation requires line-of-comms to at least 2 nodes."
+    },
+    {
+      "question_id": "q_74fac600",
+      "section_id": 8,
+      "topic": "Safehouse Provisioning",
+      "question": "In Section 8, what is the most accurate detail about 'Safehouse Provisioning'?",
+      "options": {
+        "A": "Known Bases, Safehouses, and Operational Territory 8.1 Primary Base: Cuartel Valparaíso The asset's primary operational base is Cuartel Valparaíso, designated PAMC South Cone Headquarters.",
+        "B": "It only refers to public media restrictions.",
+        "C": "It refers to a retired equipment archive only.",
+        "D": "It is a general historical footnote without tactical use."
+      },
+      "correct_answer": "A",
+      "explanation": "Known Bases, Safehouses, and Operational Territory 8.1 Primary Base: Cuartel Valparaíso The asset's primary operational base is Cuartel Valparaíso, designated PAMC South Cone Headquarters.",
+      "adaptive_reason": null,
+      "generator": "fallback_rule_based",
+      "user_answer": "A",
+      "is_correct": true,
+      "clarification": "Correct."
+    },
+    {
+      "question_id": "q_f288ea4e",
+      "section_id": 8,
+      "topic": "Known Bases, Safehouses, and Operational Territory",
+      "question": "What is another important focus of Section 8? (4)",
+      "options": {
+        "A": "Known Bases, Safehouses, and Operational Territory",
+        "B": "Unrelated financial accounting only",
+        "C": "Random social media content",
+        "D": "A cooking instruction section"
+      },
+      "correct_answer": "A",
+      "explanation": "Section 8 is titled 'Known Bases, Safehouses, and Operational Territory'.",
+      "adaptive_reason": null,
+      "generator": "fallback_rule_based",
+      "user_answer": "A",
+      "is_correct": true,
+      "clarification": "Correct."
+    },
+    {
+      "question_id": "q_a3a25704",
+      "section_id": 8,
+      "topic": "Known Bases, Safehouses, and Operational Territory",
+      "question": "What is another important focus of Section 8? (5)",
+      "options": {
+        "A": "Known Bases, Safehouses, and Operational Territory",
+        "B": "Unrelated financial accounting only",
+        "C": "Random social media content",
+        "D": "A cooking instruction section"
+      },
+      "correct_answer": "A",
+      "explanation": "Section 8 is titled 'Known Bases, Safehouses, and Operational Territory'.",
+      "adaptive_reason": null,
+      "generator": "fallback_rule_based",
+      "user_answer": "B",
+      "is_correct": false,
+      "clarification": "Wrong. Correct answer is A: Known Bases, Safehouses, and Operational Territory. Clarification: Section 8 is titled 'Known Bases, Safehouses, and Operational Territory'."
+    },
+    {
+      "question_id": "q_20c1841a",
+      "section_id": 9,
+      "topic": "Threat Tier Classification",
+      "question": "According to Section 9, which statement best matches the topic 'Threat Tier Classification'?",
+      "options": {
+        "A": "The escaped adversary subsequently identified as a low-tier Concession affiliate.",
+        "B": "It is mainly a civilian biography detail.",
+        "C": "It describes a non-operational background note.",
+        "D": "It only identifies a location name without any function."
+      },
+      "correct_answer": "A",
+      "explanation": "The escaped adversary subsequently identified as a low-tier Concession affiliate.",
+      "adaptive_reason": null,
+      "generator": "fallback_rule_based",
+      "user_answer": "A",
+      "is_correct": true,
+      "clarification": "Correct."
+    },
+    {
+      "question_id": "q_62af2feb",
+      "section_id": 9,
+      "topic": "Threat Tier Classification",
+      "question": "In Section 9, what is the most accurate detail about 'Threat Tier Classification'?",
+      "options": {
+        "A": "9.4 Case 2022-0123: Tropopausa First Engagement (Mendoza) Case number: 2022-0123 Date: 3–5 June 2022 Location: Mendoza Free Trade Zone, Argentina Classification: Classified (Tier-2) Outcome: Pyrrhic PAMC casualties: 1 operative KIA (Cpl.",
+        "B": "It is mainly a civilian biography detail.",
+        "C": "It describes a non-operational background note.",
+        "D": "It only identifies a location name without any function."
+      },
+      "correct_answer": "A",
+      "explanation": "9.4 Case 2022-0123: Tropopausa First Engagement (Mendoza) Case number: 2022-0123 Date: 3–5 June 2022 Location: Mendoza Free Trade Zone, Argentina Classification: Classified (Tier-2) Outcome: Pyrrhic PAMC casualties: 1 operative KIA (Cpl.",
+      "adaptive_reason": null,
+      "generator": "fallback_rule_based",
+      "user_answer": "A",
+      "is_correct": true,
+      "clarification": "Correct."
+    },
+    {
+      "question_id": "q_37e32599",
+      "section_id": 9,
+      "topic": "Doctrine of Sequential Suspension",
+      "question": "According to Section 9, which statement best matches the topic 'Doctrine of Sequential Suspension'?",
+      "options": {
+        "A": "Adolfo Yáñez-Ríos, Cell Cóndor); 3 civilians killed Adversary casualties: Tropopausa contained but escaped after 8 hours Notes: Engagement triggered formal articulation of the Doctrine of Sequential Suspension.",
+        "B": "It is mainly a civilian biography detail.",
+        "C": "It describes a non-operational background note.",
+        "D": "It only identifies a location name without any function."
+      },
+      "correct_answer": "A",
+      "explanation": "Adolfo Yáñez-Ríos, Cell Cóndor); 3 civilians killed Adversary casualties: Tropopausa contained but escaped after 8 hours Notes: Engagement triggered formal articulation of the Doctrine of Sequential Suspension.",
+      "adaptive_reason": null,
+      "generator": "fallback_rule_based",
+      "user_answer": "B",
+      "is_correct": false,
+      "clarification": "Wrong. Correct answer is A: Adolfo Yáñez-Ríos, Cell Cóndor); 3 civilians killed Adversary casualties: Tropopausa contained but escaped after 8 hours Notes: Engagement triggered formal articulation of the Doctrine of Sequential Suspension.. Clarification: Adolfo Yáñez-Ríos, Cell Cóndor); 3 civilians killed Adversary casualties: Tropopausa contained but escaped after 8 hours Notes: Engagement triggered formal articulation of the Doctrine of Sequential Suspension."
+    },
+    {
+      "question_id": "q_ff08577a",
+      "section_id": 9,
+      "topic": "Cell Halcón",
+      "question": "According to Section 9, which statement best matches the topic 'Cell Halcón'?",
+      "options": {
+        "A": "Quispe-Linares, leg laceration, 8-day recovery) Adversary casualties: 14 Concession affiliates captured; 2 killed in firefight; 1 metahuman (\"Cataract\") escaped Notes: Major operational success demonstrating Cell Halcón's full capability.",
+        "B": "It is mainly a civilian biography detail.",
+        "C": "It describes a non-operational background note.",
+        "D": "It only identifies a location name without any function."
+      },
+      "correct_answer": "A",
+      "explanation": "Quispe-Linares, leg laceration, 8-day recovery) Adversary casualties: 14 Concession affiliates captured; 2 killed in firefight; 1 metahuman (\"Cataract\") escaped Notes: Major operational success demonstrating Cell Halcón's full capability.",
+      "adaptive_reason": null,
+      "generator": "fallback_rule_based",
+      "user_answer": "A",
+      "is_correct": true,
+      "clarification": "Correct."
+    },
+    {
+      "question_id": "q_f8a42939",
+      "section_id": 9,
+      "topic": "Case Files: Documented Engagements and Incidents",
+      "question": "According to Section 9, which statement best matches the topic 'Case Files: Documented Engagements and Incidents'?",
+      "options": {
+        "A": "Case remains the asset's most prominent operational failure and is a featured case study at Lima Academy.",
+        "B": "It is mainly a civilian biography detail.",
+        "C": "It describes a non-operational background note.",
+        "D": "It only identifies a location name without any function."
+      },
+      "correct_answer": "A",
+      "explanation": "Case remains the asset's most prominent operational failure and is a featured case study at Lima Academy.",
+      "adaptive_reason": null,
+      "generator": "fallback_rule_based",
+      "user_answer": "A",
+      "is_correct": true,
+      "clarification": "Correct."
+    }
+  ]
+}

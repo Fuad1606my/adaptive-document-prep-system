@@ -1,0 +1,212 @@
+{
+  "session_id": "session_20260524_004929_440321",
+  "timestamp": "2026-05-24T00:49:29",
+  "session_type": "cold_start",
+  "sections": [
+    5,
+    8
+  ],
+  "score": {
+    "total": 10,
+    "correct": 6,
+    "wrong": 4,
+    "accuracy": 60.0
+  },
+  "weak_topics": [
+    "Drop-Tune Manoeuvre",
+    "Known Bases, Safehouses, and Operational Territory",
+    "Operational Tactics and Combat Doctrine"
+  ],
+  "questions": [
+    {
+      "question_id": "q_409fde89",
+      "section_id": 5,
+      "topic": "Operational Tactics and Combat Doctrine",
+      "question": "According to Section 5, which statement best matches the topic 'Operational Tactics and Combat Doctrine'?",
+      "options": {
+        "A": "It is now PAMC- recognized doctrine for Class A-2 (Targeted) operatives and forms part of the standard curriculum at the Lima Operational Academy.",
+        "B": "It only identifies a location name without any function.",
+        "C": "It describes an unrelated administrative process.",
+        "D": "It is mainly a civilian biography detail."
+      },
+      "correct_answer": "A",
+      "explanation": "It is now PAMC- recognized doctrine for Class A-2 (Targeted) operatives and forms part of the standard curriculum at the Lima Operational Academy.",
+      "adaptive_reason": null,
+      "generator": "fallback_rule_based",
+      "user_answer": "B",
+      "is_correct": false,
+      "clarification": "Wrong. Correct answer is A: It is now PAMC- recognized doctrine for Class A-2 (Targeted) operatives and forms part of the standard curriculum at the Lima Operational Academy.. Clarification: It is now PAMC- recognized doctrine for Class A-2 (Targeted) operatives and forms part of the standard curriculum at the Lima Operational Academy."
+    },
+    {
+      "question_id": "q_72ec4c16",
+      "section_id": 5,
+      "topic": "Operational Tactics and Combat Doctrine",
+      "question": "In Section 5, what is the most accurate detail about 'Operational Tactics and Combat Doctrine'?",
+      "options": {
+        "A": "A single suspension rarely wins an engagement; ordered chains of three define the doctrine.",
+        "B": "It only identifies a location name without any function.",
+        "C": "It describes an unrelated administrative process.",
+        "D": "It is mainly a civilian biography detail."
+      },
+      "correct_answer": "A",
+      "explanation": "A single suspension rarely wins an engagement; ordered chains of three define the doctrine.",
+      "adaptive_reason": null,
+      "generator": "fallback_rule_based",
+      "user_answer": "A",
+      "is_correct": true,
+      "clarification": "Correct."
+    },
+    {
+      "question_id": "q_f647040b",
+      "section_id": 5,
+      "topic": "Threat Tier Classification",
+      "question": "According to Section 5, which statement best matches the topic 'Threat Tier Classification'?",
+      "options": {
+        "A": "5.3 Tier-Based Engagement Protocols PAMC Threat Tier definitions are detailed in §7.1.",
+        "B": "It only identifies a location name without any function.",
+        "C": "It describes an unrelated administrative process.",
+        "D": "It is mainly a civilian biography detail."
+      },
+      "correct_answer": "A",
+      "explanation": "5.3 Tier-Based Engagement Protocols PAMC Threat Tier definitions are detailed in §7.1.",
+      "adaptive_reason": null,
+      "generator": "fallback_rule_based",
+      "user_answer": "A",
+      "is_correct": true,
+      "clarification": "Correct."
+    },
+    {
+      "question_id": "q_f5f55094",
+      "section_id": 5,
+      "topic": "Drop-Tune Manoeuvre",
+      "question": "According to Section 5, which statement best matches the topic 'Drop-Tune Manoeuvre'?",
+      "options": {
+        "A": "5.5 The Drop-Tune Manoeuvre Drop-Tune is the standard activation pattern around the contact-exclusion rule (§2.8): 1.",
+        "B": "It only identifies a location name without any function.",
+        "C": "It describes an unrelated administrative process.",
+        "D": "It is mainly a civilian biography detail."
+      },
+      "correct_answer": "A",
+      "explanation": "5.5 The Drop-Tune Manoeuvre Drop-Tune is the standard activation pattern around the contact-exclusion rule (§2.8): 1.",
+      "adaptive_reason": null,
+      "generator": "fallback_rule_based",
+      "user_answer": "B",
+      "is_correct": false,
+      "clarification": "Wrong. Correct answer is A: 5.5 The Drop-Tune Manoeuvre Drop-Tune is the standard activation pattern around the contact-exclusion rule (§2.8): 1.. Clarification: 5.5 The Drop-Tune Manoeuvre Drop-Tune is the standard activation pattern around the contact-exclusion rule (§2.8): 1."
+    },
+    {
+      "question_id": "q_08d0f0f0",
+      "section_id": 5,
+      "topic": "Cell Halcón",
+      "question": "According to Section 5, which statement best matches the topic 'Cell Halcón'?",
+      "options": {
+        "A": "The exact 0.3 s minimum has been internalized as muscle memory; the asset's Cell Halcón training videos use a metronome cue to instill the rhythm in new operatives.",
+        "B": "It only identifies a location name without any function.",
+        "C": "It describes an unrelated administrative process.",
+        "D": "It is mainly a civilian biography detail."
+      },
+      "correct_answer": "A",
+      "explanation": "The exact 0.3 s minimum has been internalized as muscle memory; the asset's Cell Halcón training videos use a metronome cue to instill the rhythm in new operatives.",
+      "adaptive_reason": null,
+      "generator": "fallback_rule_based",
+      "user_answer": "A",
+      "is_correct": true,
+      "clarification": "Correct."
+    },
+    {
+      "question_id": "q_a71bd97c",
+      "section_id": 8,
+      "topic": "Safehouse Provisioning",
+      "question": "According to Section 8, which statement best matches the topic 'Safehouse Provisioning'?",
+      "options": {
+        "A": "Known Bases, Safehouses, and Operational Territory 8.1 Primary Base: Cuartel Valparaíso The asset's primary operational base is Cuartel Valparaíso, designated PAMC South Cone Headquarters.",
+        "B": "It only refers to public media restrictions.",
+        "C": "It refers to a retired equipment archive only.",
+        "D": "It is a general historical footnote without tactical use."
+      },
+      "correct_answer": "A",
+      "explanation": "Known Bases, Safehouses, and Operational Territory 8.1 Primary Base: Cuartel Valparaíso The asset's primary operational base is Cuartel Valparaíso, designated PAMC South Cone Headquarters.",
+      "adaptive_reason": null,
+      "generator": "fallback_rule_based",
+      "user_answer": "A",
+      "is_correct": true,
+      "clarification": "Correct."
+    },
+    {
+      "question_id": "q_9a921181",
+      "section_id": 8,
+      "topic": "Known Bases, Safehouses, and Operational Territory",
+      "question": "According to Section 8, which statement best matches the topic 'Known Bases, Safehouses, and Operational Territory'?",
+      "options": {
+        "A": "Two extra-territorial deployments have been authorized since 2019 (Quito 2021, Lima Pan-American Conference 2024).",
+        "B": "It only refers to public media restrictions.",
+        "C": "It refers to a retired equipment archive only.",
+        "D": "It is a general historical footnote without tactical use."
+      },
+      "correct_answer": "A",
+      "explanation": "Two extra-territorial deployments have been authorized since 2019 (Quito 2021, Lima Pan-American Conference 2024).",
+      "adaptive_reason": null,
+      "generator": "fallback_rule_based",
+      "user_answer": "B",
+      "is_correct": false,
+      "clarification": "Wrong. Correct answer is A: Two extra-territorial deployments have been authorized since 2019 (Quito 2021, Lima Pan-American Conference 2024).. Clarification: Two extra-territorial deployments have been authorized since 2019 (Quito 2021, Lima Pan-American Conference 2024)."
+    },
+    {
+      "question_id": "q_3e13bdff",
+      "section_id": 8,
+      "topic": "Known Bases, Safehouses, and Operational Territory",
+      "question": "In Section 8, what is the most accurate detail about 'Known Bases, Safehouses, and Operational Territory'?",
+      "options": {
+        "A": "Punta Arenas Node redundancy: each cell-led operation requires line-of-comms to at least 2 nodes.",
+        "B": "It only refers to public media restrictions.",
+        "C": "It refers to a retired equipment archive only.",
+        "D": "It is a general historical footnote without tactical use."
+      },
+      "correct_answer": "A",
+      "explanation": "Punta Arenas Node redundancy: each cell-led operation requires line-of-comms to at least 2 nodes.",
+      "adaptive_reason": null,
+      "generator": "fallback_rule_based",
+      "user_answer": "A",
+      "is_correct": true,
+      "clarification": "Correct."
+    },
+    {
+      "question_id": "q_11d4b0ed",
+      "section_id": 8,
+      "topic": "Known Bases, Safehouses, and Operational Territory",
+      "question": "What is another important focus of Section 8? (4)",
+      "options": {
+        "A": "Known Bases, Safehouses, and Operational Territory",
+        "B": "Unrelated financial accounting only",
+        "C": "Random social media content",
+        "D": "A cooking instruction section"
+      },
+      "correct_answer": "A",
+      "explanation": "Section 8 is titled 'Known Bases, Safehouses, and Operational Territory'.",
+      "adaptive_reason": null,
+      "generator": "fallback_rule_based",
+      "user_answer": "A",
+      "is_correct": true,
+      "clarification": "Correct."
+    },
+    {
+      "question_id": "q_c30ab885",
+      "section_id": 8,
+      "topic": "Known Bases, Safehouses, and Operational Territory",
+      "question": "What is another important focus of Section 8? (5)",
+      "options": {
+        "A": "Known Bases, Safehouses, and Operational Territory",
+        "B": "Unrelated financial accounting only",
+        "C": "Random social media content",
+        "D": "A cooking instruction section"
+      },
+      "correct_answer": "A",
+      "explanation": "Section 8 is titled 'Known Bases, Safehouses, and Operational Territory'.",
+      "adaptive_reason": null,
+      "generator": "fallback_rule_based",
+      "user_answer": "B",
+      "is_correct": false,
+      "clarification": "Wrong. Correct answer is A: Known Bases, Safehouses, and Operational Territory. Clarification: Section 8 is titled 'Known Bases, Safehouses, and Operational Territory'."
+    }
+  ]
+}

@@ -1,0 +1,213 @@
+{
+  "session_id": "session_20260524_004923_183150",
+  "timestamp": "2026-05-24T00:49:23",
+  "session_type": "cold_start",
+  "sections": [
+    3,
+    7
+  ],
+  "score": {
+    "total": 10,
+    "correct": 6,
+    "wrong": 4,
+    "accuracy": 60.0
+  },
+  "weak_topics": [
+    "Adversaries and Documented Threats",
+    "Mass Ceiling",
+    "Origin and Key Historical Events",
+    "Safehouse Provisioning"
+  ],
+  "questions": [
+    {
+      "question_id": "q_9d59dbfa",
+      "section_id": 3,
+      "topic": "Origin and Key Historical Events",
+      "question": "According to Section 3, which statement best matches the topic 'Origin and Key Historical Events'?",
+      "options": {
+        "A": "Origin and Key Historical Events 3.1 Early Life (1987–2005) Inez Yolanda Calvache-Renström was born on 8 September 1987 at the Hospital Naval de Punta Arenas, in conditions noted as \"uneventful\" on her birth record.",
+        "B": "It describes a non-operational background note.",
+        "C": "It only identifies a location name without any function.",
+        "D": "It describes an unrelated administrative process."
+      },
+      "correct_answer": "A",
+      "explanation": "Origin and Key Historical Events 3.1 Early Life (1987–2005) Inez Yolanda Calvache-Renström was born on 8 September 1987 at the Hospital Naval de Punta Arenas, in conditions noted as \"uneventful\" on her birth record.",
+      "adaptive_reason": null,
+      "generator": "fallback_rule_based",
+      "user_answer": "B",
+      "is_correct": false,
+      "clarification": "Wrong. Correct answer is A: Origin and Key Historical Events 3.1 Early Life (1987–2005) Inez Yolanda Calvache-Renström was born on 8 September 1987 at the Hospital Naval de Punta Arenas, in conditions noted as \"uneventful\" on her birth record.. Clarification: Origin and Key Historical Events 3.1 Early Life (1987–2005) Inez Yolanda Calvache-Renström was born on 8 September 1987 at the Hospital Naval de Punta Arenas, in conditions noted as \"uneventful\" on her birth record."
+    },
+    {
+      "question_id": "q_990408d0",
+      "section_id": 3,
+      "topic": "Origin and Key Historical Events",
+      "question": "In Section 3, what is the most accurate detail about 'Origin and Key Historical Events'?",
+      "options": {
+        "A": "Her early childhood, until age 12, was spent in the Magallanes Region, where her father served as a regional army geologist and her mother operated a small pediatric practice.",
+        "B": "It describes a non-operational background note.",
+        "C": "It only identifies a location name without any function.",
+        "D": "It describes an unrelated administrative process."
+      },
+      "correct_answer": "A",
+      "explanation": "Her early childhood, until age 12, was spent in the Magallanes Region, where her father served as a regional army geologist and her mother operated a small pediatric practice.",
+      "adaptive_reason": null,
+      "generator": "fallback_rule_based",
+      "user_answer": "A",
+      "is_correct": true,
+      "clarification": "Correct."
+    },
+    {
+      "question_id": "q_79f6fd3f",
+      "section_id": 3,
+      "topic": "Inertial Suspension",
+      "question": "According to Section 3, which statement best matches the topic 'Inertial Suspension'?",
+      "options": {
+        "A": "14:41:58 — During the fall, she experienced an involuntary first activation of Inertial Suspension, arresting the descent of a fragmented 380 kg slate mass adjacent to her body for an estimated 0.6 s, allowing reorientation.",
+        "B": "It describes a non-operational background note.",
+        "C": "It only identifies a location name without any function.",
+        "D": "It describes an unrelated administrative process."
+      },
+      "correct_answer": "A",
+      "explanation": "14:41:58 — During the fall, she experienced an involuntary first activation of Inertial Suspension, arresting the descent of a fragmented 380 kg slate mass adjacent to her body for an estimated 0.6 s, allowing reorientation.",
+      "adaptive_reason": null,
+      "generator": "fallback_rule_based",
+      "user_answer": "A",
+      "is_correct": true,
+      "clarification": "Correct."
+    },
+    {
+      "question_id": "q_7a89fa69",
+      "section_id": 3,
+      "topic": "Mass Ceiling",
+      "question": "According to Section 3, which statement best matches the topic 'Mass Ceiling'?",
+      "options": {
+        "A": "Subsequent training discipline tightened; the mass ceiling protocol was formalized.",
+        "B": "It describes a non-operational background note.",
+        "C": "It only identifies a location name without any function.",
+        "D": "It describes an unrelated administrative process."
+      },
+      "correct_answer": "A",
+      "explanation": "Subsequent training discipline tightened; the mass ceiling protocol was formalized.",
+      "adaptive_reason": null,
+      "generator": "fallback_rule_based",
+      "user_answer": "B",
+      "is_correct": false,
+      "clarification": "Wrong. Correct answer is A: Subsequent training discipline tightened; the mass ceiling protocol was formalized.. Clarification: Subsequent training discipline tightened; the mass ceiling protocol was formalized."
+    },
+    {
+      "question_id": "q_6ac31363",
+      "section_id": 3,
+      "topic": "Drift Read",
+      "question": "According to Section 3, which statement best matches the topic 'Drift Read'?",
+      "options": {
+        "A": "3.7 The Antofagasta Incident and Drift Read Awakening (17 May 2021) On 17 May 2021 during a containment operation in the port district of Antofagasta (PAMC Case 2020- 0048, see §9.2), the asset suffered a small-arms ambush from elevated cover.",
+        "B": "It describes a non-operational background note.",
+        "C": "It only identifies a location name without any function.",
+        "D": "It describes an unrelated administrative process."
+      },
+      "correct_answer": "A",
+      "explanation": "3.7 The Antofagasta Incident and Drift Read Awakening (17 May 2021) On 17 May 2021 during a containment operation in the port district of Antofagasta (PAMC Case 2020- 0048, see §9.2), the asset suffered a small-arms ambush from elevated cover.",
+      "adaptive_reason": null,
+      "generator": "fallback_rule_based",
+      "user_answer": "A",
+      "is_correct": true,
+      "clarification": "Correct."
+    },
+    {
+      "question_id": "q_99f632da",
+      "section_id": 7,
+      "topic": "Threat Tier Classification",
+      "question": "According to Section 7, which statement best matches the topic 'Threat Tier Classification'?",
+      "options": {
+        "A": "The asset has personally engaged threats up to Tier 4 (Tropopausa, Quebrantadero); no Tier 5 engagement is presently SLATEFALL_DOSSIER.md 2026-05-18 30 / 50 --- PAGE 31 --- authorized.",
+        "B": "It describes an unrelated administrative process.",
+        "C": "It is mainly a civilian biography detail.",
+        "D": "It describes a non-operational background note."
+      },
+      "correct_answer": "A",
+      "explanation": "The asset has personally engaged threats up to Tier 4 (Tropopausa, Quebrantadero); no Tier 5 engagement is presently SLATEFALL_DOSSIER.md 2026-05-18 30 / 50 --- PAGE 31 --- authorized.",
+      "adaptive_reason": null,
+      "generator": "fallback_rule_based",
+      "user_answer": "A",
+      "is_correct": true,
+      "clarification": "Correct."
+    },
+    {
+      "question_id": "q_c24a6b5f",
+      "section_id": 7,
+      "topic": "Adversaries and Documented Threats",
+      "question": "According to Section 7, which statement best matches the topic 'Adversaries and Documented Threats'?",
+      "options": {
+        "A": "7.2 Named Adversary Roster — Overview The asset's documented adversary roster comprises seven principal named threats and three networked organizations.",
+        "B": "It describes an unrelated administrative process.",
+        "C": "It is mainly a civilian biography detail.",
+        "D": "It describes a non-operational background note."
+      },
+      "correct_answer": "A",
+      "explanation": "7.2 Named Adversary Roster — Overview The asset's documented adversary roster comprises seven principal named threats and three networked organizations.",
+      "adaptive_reason": null,
+      "generator": "fallback_rule_based",
+      "user_answer": "B",
+      "is_correct": false,
+      "clarification": "Wrong. Correct answer is A: 7.2 Named Adversary Roster — Overview The asset's documented adversary roster comprises seven principal named threats and three networked organizations.. Clarification: 7.2 Named Adversary Roster — Overview The asset's documented adversary roster comprises seven principal named threats and three networked organizations."
+    },
+    {
+      "question_id": "q_e02ac403",
+      "section_id": 7,
+      "topic": "Adversaries and Documented Threats",
+      "question": "In Section 7, what is the most accurate detail about 'Adversaries and Documented Threats'?",
+      "options": {
+        "A": "Acoustic shock from his pressure pulses has produced one documented targeting interruption (Mendoza, 2022).",
+        "B": "It describes an unrelated administrative process.",
+        "C": "It is mainly a civilian biography detail.",
+        "D": "It describes a non-operational background note."
+      },
+      "correct_answer": "A",
+      "explanation": "Acoustic shock from his pressure pulses has produced one documented targeting interruption (Mendoza, 2022).",
+      "adaptive_reason": null,
+      "generator": "fallback_rule_based",
+      "user_answer": "A",
+      "is_correct": true,
+      "clarification": "Correct."
+    },
+    {
+      "question_id": "q_b6288d85",
+      "section_id": 7,
+      "topic": "Duration and Range",
+      "question": "According to Section 7, which statement best matches the topic 'Duration and Range'?",
+      "options": {
+        "A": "Effects range from temporary fragility (osteopenia-equivalent for ~6 hours) to acute fracture cascades.",
+        "B": "It describes an unrelated administrative process.",
+        "C": "It is mainly a civilian biography detail.",
+        "D": "It describes a non-operational background note."
+      },
+      "correct_answer": "A",
+      "explanation": "Effects range from temporary fragility (osteopenia-equivalent for ~6 hours) to acute fracture cascades.",
+      "adaptive_reason": null,
+      "generator": "fallback_rule_based",
+      "user_answer": "A",
+      "is_correct": true,
+      "clarification": "Correct."
+    },
+    {
+      "question_id": "q_2a4418d5",
+      "section_id": 7,
+      "topic": "Safehouse Provisioning",
+      "question": "According to Section 7, which statement best matches the topic 'Safehouse Provisioning'?",
+      "options": {
+        "A": "Between 2024 and 2026 he initiated eleven formal audits of SLATEFALL operations, three of which sought disciplinary referral; all three were dismissed.",
+        "B": "It describes an unrelated administrative process.",
+        "C": "It is mainly a civilian biography detail.",
+        "D": "It describes a non-operational background note."
+      },
+      "correct_answer": "A",
+      "explanation": "Between 2024 and 2026 he initiated eleven formal audits of SLATEFALL operations, three of which sought disciplinary referral; all three were dismissed.",
+      "adaptive_reason": null,
+      "generator": "fallback_rule_based",
+      "user_answer": "B",
+      "is_correct": false,
+      "clarification": "Wrong. Correct answer is A: Between 2024 and 2026 he initiated eleven formal audits of SLATEFALL operations, three of which sought disciplinary referral; all three were dismissed.. Clarification: Between 2024 and 2026 he initiated eleven formal audits of SLATEFALL operations, three of which sought disciplinary referral; all three were dismissed."
+    }
+  ]
+}

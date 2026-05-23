@@ -1,0 +1,28 @@
+{
+  "snapshot_created_at": "2026-05-24T00:49:23",
+  "total_sessions": 1,
+  "recent_sessions": [
+    {
+      "session_id": "session_20260524_004923_183150",
+      "timestamp": "2026-05-24T00:49:23",
+      "session_type": "cold_start",
+      "sections": [
+        3,
+        7
+      ],
+      "score": {
+        "total": 10,
+        "correct": 6,
+        "wrong": 4,
+        "accuracy": 60.0
+      },
+      "weak_topics": [
+        "Adversaries and Documented Threats",
+        "Mass Ceiling",
+        "Origin and Key Historical Events",
+        "Safehouse Provisioning"
+      ],
+      "question_count": 10
+    }
+  ]
+}
