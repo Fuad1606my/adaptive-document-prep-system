@@ -1,6 +1,6 @@
 {
-  "session_id": "session_20260524_004930_109150",
-  "timestamp": "2026-05-24T00:49:30",
+  "session_id": "session_20260524_005105_321136",
+  "timestamp": "2026-05-24T00:51:05",
   "session_type": "adaptive",
   "sections": [
     8
@@ -16,7 +16,7 @@
   ],
   "questions": [
     {
-      "question_id": "q_e54306b9",
+      "question_id": "q_841e1048",
       "section_id": 8,
       "topic": "Known Bases, Safehouses, and Operational Territory",
       "question": "In Section 8, what is the most accurate detail about 'Known Bases, Safehouses, and Operational Territory'?",
@@ -35,7 +35,7 @@
       "clarification": "Wrong. Correct answer is A: Two extra-territorial deployments have been authorized since 2019 (Quito 2021, Lima Pan-American Conference 2024).. Clarification: Two extra-territorial deployments have been authorized since 2019 (Quito 2021, Lima Pan-American Conference 2024)."
     },
     {
-      "question_id": "q_fb777f40",
+      "question_id": "q_c3ce16ad",
       "section_id": 8,
       "topic": "Safehouse Provisioning",
       "question": "In Section 8, what is the most accurate detail about 'Safehouse Provisioning'?",
@@ -54,7 +54,7 @@
       "clarification": "Correct."
     },
     {
-      "question_id": "q_d1458755",
+      "question_id": "q_9f6511d7",
       "section_id": 8,
       "topic": "Known Bases, Safehouses, and Operational Territory",
       "question": "What is another important focus of Section 8? (3)",
@@ -73,7 +73,7 @@
       "clarification": "Correct."
     },
     {
-      "question_id": "q_05cd0fd7",
+      "question_id": "q_7735b37f",
       "section_id": 8,
       "topic": "Known Bases, Safehouses, and Operational Territory",
       "question": "What is another important focus of Section 8? (4)",
@@ -92,7 +92,7 @@
       "clarification": "Wrong. Correct answer is A: Known Bases, Safehouses, and Operational Territory. Clarification: Section 8 is titled 'Known Bases, Safehouses, and Operational Territory'."
     },
     {
-      "question_id": "q_4d80bb5f",
+      "question_id": "q_0b62d845",
       "section_id": 8,
       "topic": "Known Bases, Safehouses, and Operational Territory",
       "question": "What is another important focus of Section 8? (5)",
