@@ -1,5 +1,17 @@
 # Adaptive Document Preparation System
 
+## Live Demo
+
+Streamlit live demo:
+
+```text
+https://adaptive-doc-prep-ai.streamlit.app
+```
+
+Note: The live cloud demo uses the fallback MCQ generator when Ollama is unavailable on the cloud server. For full Ollama-powered generation, run the project locally with Ollama installed.
+
+---
+
 A local AI-powered adaptive study system for generating Multiple Choice Questions (MCQs) from a multi-section PDF document, collecting user answers, scoring sessions, storing preparation history in a Knowledge Base, and adapting future question generation based on historical weak areas.
 
 This project was built for the AI/ML Intern Take-Home Assessment.
@@ -37,6 +49,7 @@ The key adaptive behavior is:
 - Manual answer mode for real users
 - Simulated answer mode for evaluation runs
 - Local Ollama LLM integration for MCQ generation
+- Cloud-safe fallback MCQ generation
 - Deterministic fallback MCQ generator for reliability
 - Scoring with correct/wrong marking
 - Correct answer and clarification for every wrong answer
@@ -47,6 +60,7 @@ The key adaptive behavior is:
 - Human-readable KB snapshots
 - Pytest test suite
 - Offline-friendly local execution
+- Public live Streamlit demo
 
 ---
 
@@ -66,6 +80,7 @@ The key adaptive behavior is:
 | Tests | Pytest |
 | MCQ Generation | Ollama LLM with fallback rule-based generator |
 | Data Display | Pandas / Streamlit dataframes |
+| Deployment | Streamlit Community Cloud |
 
 ---
 
@@ -80,6 +95,8 @@ FastAPI was chosen because it provides a clean Python backend and automatic Swag
 The JSON Knowledge Base was chosen because it is simple, transparent, easy to inspect, and suitable for this assessment’s evaluation workflow.
 
 Pytest was added to verify core behavior such as PDF parsing, section mapping, scoring, KB session logic, and fallback MCQ generation.
+
+Streamlit Community Cloud was used for a simple public live demo.
 
 ---
 
@@ -139,6 +156,8 @@ adaptive-document-prep-system/
 - The provided `SLATEFALL_DOSSIER.pdf` file placed in the `data/` folder
 
 This project was developed and tested with Python 3.14 on Windows.
+
+For cloud demo usage, Ollama is not required because the deployed Streamlit app uses the fallback generator.
 
 ---
 
@@ -227,9 +246,49 @@ If Ollama is unavailable, slow, or returns invalid JSON, the system automaticall
 
 ---
 
-## 9. Streamlit User Interface
+## 9. Cloud-Safe Ollama Toggle
 
-Run the interactive UI:
+The project includes a cloud-safe environment toggle:
+
+```text
+USE_OLLAMA=true
+```
+
+or:
+
+```text
+USE_OLLAMA=false
+```
+
+Local default:
+
+```text
+USE_OLLAMA=true
+```
+
+This means the app uses Ollama locally if Ollama is running.
+
+Streamlit Cloud setting:
+
+```toml
+USE_OLLAMA = "false"
+```
+
+This prevents the deployed app from trying to call `localhost:11434`, because Ollama is not available on the Streamlit Cloud server.
+
+Result:
+
+| Environment | Generator |
+|---|---|
+| Local PC with Ollama | `ollama_llm` |
+| Streamlit Cloud | `fallback_rule_based` |
+| Local PC without Ollama | `fallback_rule_based` |
+
+---
+
+## 10. Streamlit User Interface
+
+Run the interactive UI locally:
 
 ```bash
 streamlit run app.py
@@ -239,6 +298,12 @@ Open:
 
 ```text
 http://localhost:8501
+```
+
+Public live demo:
+
+```text
+https://adaptive-doc-prep-ai.streamlit.app
 ```
 
 The UI supports:
@@ -260,7 +325,7 @@ The Streamlit UI uses a forced dark theme through `.streamlit/config.toml` so th
 
 ---
 
-## 10. Answer Modes
+## 11. Answer Modes
 
 The system supports two answer modes.
 
@@ -299,7 +364,7 @@ Simulated answers are acceptable for the required assessment scenarios.
 
 ---
 
-## 11. CLI Commands
+## 12. CLI Commands
 
 ### Parse the PDF and show detected sections
 
@@ -338,7 +403,7 @@ This creates a dummy session and verifies KB save/load and snapshot behavior.
 
 ---
 
-## 12. Evaluation Scenarios
+## 13. Evaluation Scenarios
 
 ### Scenario A
 
@@ -392,7 +457,7 @@ Scenario B demonstrates the core adaptive behavior because section 8 appears in 
 
 ---
 
-## 13. FastAPI Usage
+## 14. FastAPI Usage
 
 Start the FastAPI server:
 
@@ -430,7 +495,7 @@ Example request for `/sessions/run`:
 
 ---
 
-## 14. Running Tests
+## 15. Running Tests
 
 The project includes a pytest test suite covering:
 
@@ -462,7 +527,7 @@ The tests are designed to be fast and do not require Ollama, internet access, Fa
 
 ---
 
-## 15. Knowledge Base Design
+## 16. Knowledge Base Design
 
 The KB is stored in:
 
@@ -523,7 +588,7 @@ The KB supports:
 
 ---
 
-## 16. Adaptive Logic
+## 17. Adaptive Logic
 
 The adaptive engine checks whether selected sections have previous session history.
 
@@ -556,7 +621,7 @@ Focused on previously missed topic: Known Bases, Safehouses, and Operational Ter
 
 ---
 
-## 17. MCQ Generation
+## 18. MCQ Generation
 
 The MCQ generator uses a hybrid design:
 
@@ -585,7 +650,7 @@ This makes the output auditable for reviewers.
 
 ---
 
-## 18. Output Files
+## 19. Output Files
 
 Required scenario outputs are stored under:
 
@@ -617,7 +682,33 @@ These files include generated questions, simulated answers, scoring results, ada
 
 ---
 
-## 19. Validation and Reliability
+## 20. Streamlit Cloud Deployment
+
+The app is deployed on Streamlit Community Cloud:
+
+```text
+https://adaptive-doc-prep-ai.streamlit.app
+```
+
+Deployment settings:
+
+```text
+Repository: Fuad1606my/adaptive-document-prep-system
+Branch: main
+Main file path: app.py
+```
+
+Cloud secret:
+
+```toml
+USE_OLLAMA = "false"
+```
+
+This makes the cloud app stable by using the fallback generator instead of trying to call a local Ollama server.
+
+---
+
+## 21. Validation and Reliability
 
 The project includes multiple reliability layers:
 
@@ -625,18 +716,21 @@ The project includes multiple reliability layers:
 - LLM availability check before Ollama generation
 - JSON parsing and validation for Ollama responses
 - Fallback generator if Ollama fails
+- Cloud-safe `USE_OLLAMA` toggle
 - Syntax validation using Python compilation
 - Pytest test suite for core modules
 - Manual and simulated answer validation in the UI
 - Section ID validation during generation
+- Streamlit theme configuration for readable UI
 
-This design prevents the system from breaking if the local LLM is slow, unavailable, or produces invalid output.
+This design prevents the system from breaking if the local LLM is slow, unavailable, disabled in cloud, or produces invalid output.
 
 ---
 
-## 20. Known Limitations
+## 22. Known Limitations
 
 - Ollama must be installed locally to use real LLM generation.
+- The live cloud demo uses the fallback generator because Streamlit Cloud does not run the user’s local Ollama server.
 - Local LLM generation can be slower than a cloud API.
 - The fallback generator is deterministic and less natural than LLM-generated questions.
 - JSON storage is used instead of a production database for simplicity and transparency.
@@ -647,7 +741,7 @@ This design prevents the system from breaking if the local LLM is slow, unavaila
 
 ---
 
-## 21. Development Notes
+## 23. Development Notes
 
 The project focuses on the assessment’s core differentiator:
 
@@ -659,9 +753,11 @@ The Streamlit UI demonstrates the same system as a real user-facing adaptive stu
 
 The pytest suite gives reviewers a quick way to verify that key modules work correctly without needing to run Ollama or the UI.
 
+The live Streamlit Cloud demo gives reviewers a public way to try the system without local setup.
+
 ---
 
-## 22. Quick Review Commands
+## 24. Quick Review Commands
 
 Install dependencies:
 
@@ -701,10 +797,16 @@ Streamlit UI:
 streamlit run app.py
 ```
 
-Open:
+Open local UI:
 
 ```text
 http://localhost:8501
+```
+
+Open live demo:
+
+```text
+https://adaptive-doc-prep-ai.streamlit.app
 ```
 
 Ollama:
@@ -716,7 +818,7 @@ ollama run llama3.2:3b
 
 ---
 
-## 23. Final Checklist
+## 25. Final Checklist
 
 | Requirement / Improvement | Status |
 |---|---|
@@ -724,7 +826,7 @@ ollama run llama3.2:3b
 | Section selection | Complete |
 | MCQ generation | Complete |
 | Ollama local LLM | Complete |
-| Fallback generator | Complete |
+| Cloud-safe fallback generation | Complete |
 | Manual answer mode | Complete |
 | Simulated answer mode | Complete |
 | Scoring and clarification | Complete |
@@ -734,13 +836,14 @@ ollama run llama3.2:3b
 | Scenario B export | Complete |
 | FastAPI backend | Complete |
 | Streamlit UI | Complete |
+| Streamlit live demo | Complete |
 | Theme contrast fix | Complete |
 | Pytest test suite | Complete |
 | README polish | Complete |
 
 ---
 
-## 24. Repository
+## 26. Repository
 
 Public GitHub repository:
 
