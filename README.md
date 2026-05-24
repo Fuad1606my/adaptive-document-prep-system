@@ -10,11 +10,12 @@ This project was built for the AI/ML Intern Take-Home Assessment.
 
 The system ingests the provided `SLATEFALL_DOSSIER.pdf`, parses it into 10 document sections, allows users to select one or more sections for preparation, generates MCQs from those sections, collects answers, scores the session, stores the result in a Knowledge Base, and adapts later sessions using previously missed topics.
 
-The project supports three ways to use the system:
+The project supports four main workflows:
 
 1. **CLI** for evaluation scenarios and reproducible outputs.
 2. **FastAPI REST API** for backend integration and Swagger testing.
 3. **Streamlit UI** for real users to study interactively.
+4. **Pytest test suite** for validating core system behavior.
 
 The key adaptive behavior is:
 
@@ -44,6 +45,7 @@ The key adaptive behavior is:
 - Adaptive question generation
 - Scenario A and Scenario B output exports
 - Human-readable KB snapshots
+- Pytest test suite
 - Offline-friendly local execution
 
 ---
@@ -61,6 +63,7 @@ The key adaptive behavior is:
 | Knowledge Base | JSON file |
 | CLI Output | Rich |
 | Validation | Pydantic + custom LLM response validation |
+| Tests | Pytest |
 | MCQ Generation | Ollama LLM with fallback rule-based generator |
 | Data Display | Pandas / Streamlit dataframes |
 
@@ -74,7 +77,9 @@ The project also includes a deterministic fallback generator. If Ollama is unava
 
 FastAPI was chosen because it provides a clean Python backend and automatic Swagger documentation. Streamlit was added to make the system usable by real users, not just API testers.
 
-The JSON Knowledge Base was chosen because it is simple, transparent, easy to inspect, and explicitly suitable for this assessment’s evaluation workflow.
+The JSON Knowledge Base was chosen because it is simple, transparent, easy to inspect, and suitable for this assessment’s evaluation workflow.
+
+Pytest was added to verify core behavior such as PDF parsing, section mapping, scoring, KB session logic, and fallback MCQ generation.
 
 ---
 
@@ -82,6 +87,9 @@ The JSON Knowledge Base was chosen because it is simple, transparent, easy to in
 
 ```text
 adaptive-document-prep-system/
+│
+├── .streamlit/
+│   └── config.toml
 │
 ├── data/
 │   ├── SLATEFALL_DOSSIER.pdf
@@ -100,6 +108,14 @@ adaptive-document-prep-system/
 │   ├── exporter.py
 │   ├── api.py
 │   └── cli.py
+│
+├── tests/
+│   ├── __init__.py
+│   ├── test_pdf_parser.py
+│   ├── test_section_mapper.py
+│   ├── test_scoring.py
+│   ├── test_kb_manager.py
+│   └── test_mcq_generator.py
 │
 ├── outputs/
 │   ├── scenario_a/
@@ -207,7 +223,7 @@ The project calls Ollama through:
 http://localhost:11434/api/chat
 ```
 
-If Ollama is unavailable or returns invalid JSON, the system automatically falls back to the local deterministic generator.
+If Ollama is unavailable, slow, or returns invalid JSON, the system automatically falls back to the local deterministic generator.
 
 ---
 
@@ -240,6 +256,8 @@ The UI supports:
 - viewing KB snapshots
 - running Scenario B export
 
+The Streamlit UI uses a forced dark theme through `.streamlit/config.toml` so the interface remains readable even if the browser or system is in light mode.
+
 ---
 
 ## 10. Answer Modes
@@ -262,7 +280,7 @@ Save session to KB
 Use history for future adaptation
 ```
 
-Manual mode makes the project useful as a real adaptive study tool.
+Manual mode makes the project usable as a real adaptive study tool.
 
 ### Simulated Mode
 
@@ -412,7 +430,39 @@ Example request for `/sessions/run`:
 
 ---
 
-## 14. Knowledge Base Design
+## 14. Running Tests
+
+The project includes a pytest test suite covering:
+
+- PDF file existence and PDF parsing
+- PDF page count validation
+- Section mapping
+- Section summary generation
+- Scoring logic
+- Simulated answer modes
+- KB session score calculation
+- Weak topic detection
+- Fallback MCQ generation
+- Required MCQ field validation
+- Generator metadata validation
+
+Run tests:
+
+```bash
+pytest
+```
+
+Expected result:
+
+```text
+18 passed
+```
+
+The tests are designed to be fast and do not require Ollama, internet access, FastAPI server, or Streamlit server to be running.
+
+---
+
+## 15. Knowledge Base Design
 
 The KB is stored in:
 
@@ -473,7 +523,7 @@ The KB supports:
 
 ---
 
-## 15. Adaptive Logic
+## 16. Adaptive Logic
 
 The adaptive engine checks whether selected sections have previous session history.
 
@@ -506,7 +556,7 @@ Focused on previously missed topic: Known Bases, Safehouses, and Operational Ter
 
 ---
 
-## 16. MCQ Generation
+## 17. MCQ Generation
 
 The MCQ generator uses a hybrid design:
 
@@ -535,7 +585,7 @@ This makes the output auditable for reviewers.
 
 ---
 
-## 17. Output Files
+## 18. Output Files
 
 Required scenario outputs are stored under:
 
@@ -563,11 +613,28 @@ outputs/scenario_b_iter3/questions_iter3.json
 outputs/scenario_b_iter3/kb_snapshot_iter3.json
 ```
 
-These files include generated questions, simulated answers, scoring results, adaptive reasons, and KB snapshots.
+These files include generated questions, simulated answers, scoring results, adaptive reasons, generator metadata, and KB snapshots.
 
 ---
 
-## 18. Known Limitations
+## 19. Validation and Reliability
+
+The project includes multiple reliability layers:
+
+- Pydantic validation in FastAPI request models
+- LLM availability check before Ollama generation
+- JSON parsing and validation for Ollama responses
+- Fallback generator if Ollama fails
+- Syntax validation using Python compilation
+- Pytest test suite for core modules
+- Manual and simulated answer validation in the UI
+- Section ID validation during generation
+
+This design prevents the system from breaking if the local LLM is slow, unavailable, or produces invalid output.
+
+---
+
+## 20. Known Limitations
 
 - Ollama must be installed locally to use real LLM generation.
 - Local LLM generation can be slower than a cloud API.
@@ -576,10 +643,11 @@ These files include generated questions, simulated answers, scoring results, ada
 - The adaptive logic is topic-based rather than vector-search-based.
 - Scenario A and Scenario B reset the KB before generating fresh scenario outputs.
 - The system is designed for local single-user evaluation, not multi-user production deployment.
+- Streamlit is responsive enough for desktop and tablet use, but it is not a fully custom mobile-native frontend.
 
 ---
 
-## 19. Development Notes
+## 21. Development Notes
 
 The project focuses on the assessment’s core differentiator:
 
@@ -589,9 +657,23 @@ Scenario B demonstrates this behavior through three consecutive runs where secti
 
 The Streamlit UI demonstrates the same system as a real user-facing adaptive study application.
 
+The pytest suite gives reviewers a quick way to verify that key modules work correctly without needing to run Ollama or the UI.
+
 ---
 
-## 20. Quick Review Commands
+## 22. Quick Review Commands
+
+Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+Run tests:
+
+```bash
+pytest
+```
 
 CLI:
 
@@ -634,7 +716,31 @@ ollama run llama3.2:3b
 
 ---
 
-## 21. Repository
+## 23. Final Checklist
+
+| Requirement / Improvement | Status |
+|---|---|
+| PDF ingestion | Complete |
+| Section selection | Complete |
+| MCQ generation | Complete |
+| Ollama local LLM | Complete |
+| Fallback generator | Complete |
+| Manual answer mode | Complete |
+| Simulated answer mode | Complete |
+| Scoring and clarification | Complete |
+| Knowledge Base persistence | Complete |
+| Adaptive weak-topic logic | Complete |
+| Scenario A export | Complete |
+| Scenario B export | Complete |
+| FastAPI backend | Complete |
+| Streamlit UI | Complete |
+| Theme contrast fix | Complete |
+| Pytest test suite | Complete |
+| README polish | Complete |
+
+---
+
+## 24. Repository
 
 Public GitHub repository:
 
