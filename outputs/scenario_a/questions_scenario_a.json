@@ -1,6 +1,6 @@
 {
-  "session_id": "session_20260524_005057_484089",
-  "timestamp": "2026-05-24T00:50:57",
+  "session_id": "session_20260524_030546_311744",
+  "timestamp": "2026-05-24T03:05:46",
   "session_type": "cold_start",
   "sections": [
     3,
@@ -20,7 +20,7 @@
   ],
   "questions": [
     {
-      "question_id": "q_b427c0fb",
+      "question_id": "q_4a05b940",
       "section_id": 3,
       "topic": "Origin and Key Historical Events",
       "question": "According to Section 3, which statement best matches the topic 'Origin and Key Historical Events'?",
@@ -39,7 +39,7 @@
       "clarification": "Wrong. Correct answer is A: Origin and Key Historical Events 3.1 Early Life (1987–2005) Inez Yolanda Calvache-Renström was born on 8 September 1987 at the Hospital Naval de Punta Arenas, in conditions noted as \"uneventful\" on her birth record.. Clarification: Origin and Key Historical Events 3.1 Early Life (1987–2005) Inez Yolanda Calvache-Renström was born on 8 September 1987 at the Hospital Naval de Punta Arenas, in conditions noted as \"uneventful\" on her birth record."
     },
     {
-      "question_id": "q_17f2c075",
+      "question_id": "q_4fe0ff19",
       "section_id": 3,
       "topic": "Origin and Key Historical Events",
       "question": "In Section 3, what is the most accurate detail about 'Origin and Key Historical Events'?",
@@ -58,7 +58,7 @@
       "clarification": "Correct."
     },
     {
-      "question_id": "q_035a0b65",
+      "question_id": "q_4a41d0ae",
       "section_id": 3,
       "topic": "Inertial Suspension",
       "question": "According to Section 3, which statement best matches the topic 'Inertial Suspension'?",
@@ -77,7 +77,7 @@
       "clarification": "Correct."
     },
     {
-      "question_id": "q_ba5d2311",
+      "question_id": "q_e1375e6e",
       "section_id": 3,
       "topic": "Mass Ceiling",
       "question": "According to Section 3, which statement best matches the topic 'Mass Ceiling'?",
@@ -96,7 +96,7 @@
       "clarification": "Wrong. Correct answer is A: Subsequent training discipline tightened; the mass ceiling protocol was formalized.. Clarification: Subsequent training discipline tightened; the mass ceiling protocol was formalized."
     },
     {
-      "question_id": "q_6eef8408",
+      "question_id": "q_f3a36c55",
       "section_id": 3,
       "topic": "Drift Read",
       "question": "According to Section 3, which statement best matches the topic 'Drift Read'?",
@@ -115,7 +115,7 @@
       "clarification": "Correct."
     },
     {
-      "question_id": "q_3de4fd16",
+      "question_id": "q_8006a369",
       "section_id": 7,
       "topic": "Threat Tier Classification",
       "question": "According to Section 7, which statement best matches the topic 'Threat Tier Classification'?",
@@ -134,7 +134,7 @@
       "clarification": "Correct."
     },
     {
-      "question_id": "q_d7162e91",
+      "question_id": "q_da78e79a",
       "section_id": 7,
       "topic": "Adversaries and Documented Threats",
       "question": "According to Section 7, which statement best matches the topic 'Adversaries and Documented Threats'?",
@@ -153,7 +153,7 @@
       "clarification": "Wrong. Correct answer is A: 7.2 Named Adversary Roster — Overview The asset's documented adversary roster comprises seven principal named threats and three networked organizations.. Clarification: 7.2 Named Adversary Roster — Overview The asset's documented adversary roster comprises seven principal named threats and three networked organizations."
     },
     {
-      "question_id": "q_f8c680f4",
+      "question_id": "q_cec42984",
       "section_id": 7,
       "topic": "Adversaries and Documented Threats",
       "question": "In Section 7, what is the most accurate detail about 'Adversaries and Documented Threats'?",
@@ -172,7 +172,7 @@
       "clarification": "Correct."
     },
     {
-      "question_id": "q_bfa42722",
+      "question_id": "q_8be3cc74",
       "section_id": 7,
       "topic": "Duration and Range",
       "question": "According to Section 7, which statement best matches the topic 'Duration and Range'?",
@@ -191,7 +191,7 @@
       "clarification": "Correct."
     },
     {
-      "question_id": "q_b0fba5af",
+      "question_id": "q_3aaedd1e",
       "section_id": 7,
       "topic": "Safehouse Provisioning",
       "question": "According to Section 7, which statement best matches the topic 'Safehouse Provisioning'?",

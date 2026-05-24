@@ -1,10 +1,10 @@
 {
-  "snapshot_created_at": "2026-05-24T02:30:04",
+  "snapshot_created_at": "2026-05-24T06:32:08",
   "total_sessions": 3,
   "recent_sessions": [
     {
-      "session_id": "session_20260524_023004_277577",
-      "timestamp": "2026-05-24T02:30:04",
+      "session_id": "session_20260524_063208_960345",
+      "timestamp": "2026-05-24T06:32:08",
       "session_type": "adaptive",
       "sections": [
         8
@@ -16,13 +16,13 @@
         "accuracy": 60.0
       },
       "weak_topics": [
-        "Known Bases, Safehouses, and Operational Territory"
+        "Safehouse Provisioning"
       ],
       "question_count": 5
     },
     {
-      "session_id": "session_20260524_023003_911710",
-      "timestamp": "2026-05-24T02:30:03",
+      "session_id": "session_20260524_062553_333645",
+      "timestamp": "2026-05-24T06:25:53",
       "session_type": "adaptive",
       "sections": [
         6,
@@ -36,15 +36,17 @@
         "accuracy": 66.67
       },
       "weak_topics": [
-        "Doctrine of Sequential Suspension",
+        "Allies",
+        "Cell Halcón",
         "Known Bases, Safehouses, and Operational Territory",
-        "Safehouse Provisioning"
+        "Safehouses",
+        "Threat Tier Classification"
       ],
       "question_count": 15
     },
     {
-      "session_id": "session_20260524_023003_492713",
-      "timestamp": "2026-05-24T02:30:03",
+      "session_id": "session_20260524_060828_135488",
+      "timestamp": "2026-05-24T06:08:28",
       "session_type": "cold_start",
       "sections": [
         5,
@@ -57,9 +59,10 @@
         "accuracy": 60.0
       },
       "weak_topics": [
-        "Drop-Tune Manoeuvre",
         "Known Bases, Safehouses, and Operational Territory",
-        "Operational Tactics and Combat Doctrine"
+        "Operational Territory",
+        "Sequential Suspension",
+        "Three-Two-One Rule"
       ],
       "question_count": 10
     }

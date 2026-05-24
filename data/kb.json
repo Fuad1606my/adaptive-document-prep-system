@@ -1,8 +1,8 @@
 {
   "sessions": [
     {
-      "session_id": "session_20260524_023003_492713",
-      "timestamp": "2026-05-24T02:30:03",
+      "session_id": "session_20260524_060828_135488",
+      "timestamp": "2026-05-24T06:08:28",
       "session_type": "cold_start",
       "sections": [
         5,
@@ -10,7 +10,83 @@
       ],
       "questions": [
         {
-          "question_id": "q_c18f48e6",
+          "section_id": 5,
+          "topic": "Sequential Suspension",
+          "question": "What is the primary resource in the Doctrine of Sequential Suspension?",
+          "options": {
+            "A": "Continuous capability",
+            "B": "Decisive resource",
+            "C": "Acquisition vulnerability",
+            "D": "Tail momentum"
+          },
+          "correct_answer": "B",
+          "explanation": "The asset's formal combat doctrine, the Doctrine of Sequential Suspension (DSS), rests on six core principles.",
+          "adaptive_reason": null,
+          "generator": "ollama_llm",
+          "question_id": "q_4d59bef0",
+          "user_answer": "A",
+          "is_correct": false,
+          "clarification": "Wrong. Correct answer is B: Decisive resource. Clarification: The asset's formal combat doctrine, the Doctrine of Sequential Suspension (DSS), rests on six core principles."
+        },
+        {
+          "section_id": 5,
+          "topic": "Tier-Based Engagement Protocols",
+          "question": "What is the minimum time required for a cell to perform a Tier 3 engagement protocol?",
+          "options": {
+            "A": "30 minutes",
+            "B": "60 seconds",
+            "C": "12 minutes",
+            "D": "1 hour"
+          },
+          "correct_answer": "C",
+          "explanation": "PAMC Threat Tier definitions are detailed in §7.1. Engagement protocols differ as follows:",
+          "adaptive_reason": null,
+          "generator": "ollama_llm",
+          "question_id": "q_0595e978",
+          "user_answer": "C",
+          "is_correct": true,
+          "clarification": "Correct."
+        },
+        {
+          "section_id": 5,
+          "topic": "Tail-Momentum",
+          "question": "What is the result of using the Tail-Strike Technique?",
+          "options": {
+            "A": "Adversary counter-prediction of trajectory becomes impossible.",
+            "B": "The strike delivered at full thrown velocity but from an arbitrary, target-adjacent location.",
+            "C": "The technique allows for a meaningful one-second window between release and engagement target acquisition.",
+            "D": "The asset's Cell Halcón training is enhanced."
+          },
+          "correct_answer": "B",
+          "explanation": "The Tail-Strike Technique exploits Tail Momentum to deliver compounded impacts that cannot be achieved by linear projectile motion alone.",
+          "adaptive_reason": null,
+          "generator": "ollama_llm",
+          "question_id": "q_c3f07999",
+          "user_answer": "B",
+          "is_correct": true,
+          "clarification": "Correct."
+        },
+        {
+          "section_id": 5,
+          "topic": "Three-Two-One Rule",
+          "question": "What is the maximum number of activations allowed per 60-second window?",
+          "options": {
+            "A": "2",
+            "B": "3",
+            "C": "4",
+            "D": "5"
+          },
+          "correct_answer": "B",
+          "explanation": "The Three-Two-One Rule states that the asset's signature tactical heuristic is to maintain three activations maximum per 60-second window.",
+          "adaptive_reason": null,
+          "generator": "ollama_llm",
+          "question_id": "q_148285c7",
+          "user_answer": "A",
+          "is_correct": false,
+          "clarification": "Wrong. Correct answer is B: 3. Clarification: The Three-Two-One Rule states that the asset's signature tactical heuristic is to maintain three activations maximum per 60-second window."
+        },
+        {
+          "question_id": "q_3583933c",
           "section_id": 5,
           "topic": "Operational Tactics and Combat Doctrine",
           "question": "According to Section 5, which statement best matches the topic 'Operational Tactics and Combat Doctrine'?",
@@ -24,88 +100,50 @@
           "explanation": "It is now PAMC- recognized doctrine for Class A-2 (Targeted) operatives and forms part of the standard curriculum at the Lima Operational Academy.",
           "adaptive_reason": null,
           "generator": "fallback_rule_based",
+          "user_answer": "A",
+          "is_correct": true,
+          "clarification": "Correct."
+        },
+        {
+          "section_id": 8,
+          "topic": "Safehouses",
+          "question": "How many formally maintained safehouses does the asset have within her operational territory?",
+          "options": {
+            "A": "3",
+            "B": "5",
+            "C": "7",
+            "D": "9"
+          },
+          "correct_answer": "B",
+          "explanation": "The asset has access to five formally maintained safehouses.",
+          "adaptive_reason": null,
+          "generator": "ollama_llm",
+          "question_id": "q_597116ac",
           "user_answer": "B",
+          "is_correct": true,
+          "clarification": "Correct."
+        },
+        {
+          "section_id": 8,
+          "topic": "Operational Territory",
+          "question": "Which country does not have full territory within the asset's operational territory?",
+          "options": {
+            "A": "Chile",
+            "B": "Peru",
+            "C": "Argentina",
+            "D": "Ecuador"
+          },
+          "correct_answer": "D",
+          "explanation": "The asset's authorized operational territory does not include Ecuador.",
+          "adaptive_reason": null,
+          "generator": "ollama_llm",
+          "question_id": "q_f4c904eb",
+          "user_answer": "A",
           "is_correct": false,
-          "clarification": "Wrong. Correct answer is A: It is now PAMC- recognized doctrine for Class A-2 (Targeted) operatives and forms part of the standard curriculum at the Lima Operational Academy.. Clarification: It is now PAMC- recognized doctrine for Class A-2 (Targeted) operatives and forms part of the standard curriculum at the Lima Operational Academy."
+          "clarification": "Wrong. Correct answer is D: Ecuador. Clarification: The asset's authorized operational territory does not include Ecuador."
         },
         {
-          "question_id": "q_cf3e020a",
-          "section_id": 5,
-          "topic": "Operational Tactics and Combat Doctrine",
-          "question": "In Section 5, what is the most accurate detail about 'Operational Tactics and Combat Doctrine'?",
-          "options": {
-            "A": "A single suspension rarely wins an engagement; ordered chains of three define the doctrine.",
-            "B": "It only identifies a location name without any function.",
-            "C": "It describes an unrelated administrative process.",
-            "D": "It is mainly a civilian biography detail."
-          },
-          "correct_answer": "A",
-          "explanation": "A single suspension rarely wins an engagement; ordered chains of three define the doctrine.",
-          "adaptive_reason": null,
-          "generator": "fallback_rule_based",
-          "user_answer": "A",
-          "is_correct": true,
-          "clarification": "Correct."
-        },
-        {
-          "question_id": "q_a3374e75",
-          "section_id": 5,
-          "topic": "Threat Tier Classification",
-          "question": "According to Section 5, which statement best matches the topic 'Threat Tier Classification'?",
-          "options": {
-            "A": "5.3 Tier-Based Engagement Protocols PAMC Threat Tier definitions are detailed in §7.1.",
-            "B": "It only identifies a location name without any function.",
-            "C": "It describes an unrelated administrative process.",
-            "D": "It is mainly a civilian biography detail."
-          },
-          "correct_answer": "A",
-          "explanation": "5.3 Tier-Based Engagement Protocols PAMC Threat Tier definitions are detailed in §7.1.",
-          "adaptive_reason": null,
-          "generator": "fallback_rule_based",
-          "user_answer": "A",
-          "is_correct": true,
-          "clarification": "Correct."
-        },
-        {
-          "question_id": "q_1fa65af3",
-          "section_id": 5,
-          "topic": "Drop-Tune Manoeuvre",
-          "question": "According to Section 5, which statement best matches the topic 'Drop-Tune Manoeuvre'?",
-          "options": {
-            "A": "5.5 The Drop-Tune Manoeuvre Drop-Tune is the standard activation pattern around the contact-exclusion rule (§2.8): 1.",
-            "B": "It only identifies a location name without any function.",
-            "C": "It describes an unrelated administrative process.",
-            "D": "It is mainly a civilian biography detail."
-          },
-          "correct_answer": "A",
-          "explanation": "5.5 The Drop-Tune Manoeuvre Drop-Tune is the standard activation pattern around the contact-exclusion rule (§2.8): 1.",
-          "adaptive_reason": null,
-          "generator": "fallback_rule_based",
-          "user_answer": "B",
-          "is_correct": false,
-          "clarification": "Wrong. Correct answer is A: 5.5 The Drop-Tune Manoeuvre Drop-Tune is the standard activation pattern around the contact-exclusion rule (§2.8): 1.. Clarification: 5.5 The Drop-Tune Manoeuvre Drop-Tune is the standard activation pattern around the contact-exclusion rule (§2.8): 1."
-        },
-        {
-          "question_id": "q_772e08ee",
-          "section_id": 5,
-          "topic": "Cell Halcón",
-          "question": "According to Section 5, which statement best matches the topic 'Cell Halcón'?",
-          "options": {
-            "A": "The exact 0.3 s minimum has been internalized as muscle memory; the asset's Cell Halcón training videos use a metronome cue to instill the rhythm in new operatives.",
-            "B": "It only identifies a location name without any function.",
-            "C": "It describes an unrelated administrative process.",
-            "D": "It is mainly a civilian biography detail."
-          },
-          "correct_answer": "A",
-          "explanation": "The exact 0.3 s minimum has been internalized as muscle memory; the asset's Cell Halcón training videos use a metronome cue to instill the rhythm in new operatives.",
-          "adaptive_reason": null,
-          "generator": "fallback_rule_based",
-          "user_answer": "A",
-          "is_correct": true,
-          "clarification": "Correct."
-        },
-        {
-          "question_id": "q_283435a5",
+          "question_id": "q_a99a5a08",
           "section_id": 8,
           "topic": "Safehouse Provisioning",
           "question": "According to Section 8, which statement best matches the topic 'Safehouse Provisioning'?",
@@ -124,7 +162,7 @@
           "clarification": "Correct."
         },
         {
-          "question_id": "q_508f8b9b",
+          "question_id": "q_c8c3b9ee",
           "section_id": 8,
           "topic": "Known Bases, Safehouses, and Operational Territory",
           "question": "According to Section 8, which statement best matches the topic 'Known Bases, Safehouses, and Operational Territory'?",
@@ -138,12 +176,12 @@
           "explanation": "Two extra-territorial deployments have been authorized since 2019 (Quito 2021, Lima Pan-American Conference 2024).",
           "adaptive_reason": null,
           "generator": "fallback_rule_based",
-          "user_answer": "B",
-          "is_correct": false,
-          "clarification": "Wrong. Correct answer is A: Two extra-territorial deployments have been authorized since 2019 (Quito 2021, Lima Pan-American Conference 2024).. Clarification: Two extra-territorial deployments have been authorized since 2019 (Quito 2021, Lima Pan-American Conference 2024)."
+          "user_answer": "A",
+          "is_correct": true,
+          "clarification": "Correct."
         },
         {
-          "question_id": "q_73f8afd7",
+          "question_id": "q_1839c63b",
           "section_id": 8,
           "topic": "Known Bases, Safehouses, and Operational Territory",
           "question": "In Section 8, what is the most accurate detail about 'Known Bases, Safehouses, and Operational Territory'?",
@@ -157,47 +195,9 @@
           "explanation": "Punta Arenas Node redundancy: each cell-led operation requires line-of-comms to at least 2 nodes.",
           "adaptive_reason": null,
           "generator": "fallback_rule_based",
-          "user_answer": "A",
-          "is_correct": true,
-          "clarification": "Correct."
-        },
-        {
-          "question_id": "q_7ede8d27",
-          "section_id": 8,
-          "topic": "Known Bases, Safehouses, and Operational Territory",
-          "question": "What is another important focus of Section 8? (4)",
-          "options": {
-            "A": "Known Bases, Safehouses, and Operational Territory",
-            "B": "Unrelated financial accounting only",
-            "C": "Random social media content",
-            "D": "A cooking instruction section"
-          },
-          "correct_answer": "A",
-          "explanation": "Section 8 is titled 'Known Bases, Safehouses, and Operational Territory'.",
-          "adaptive_reason": null,
-          "generator": "fallback_rule_based",
-          "user_answer": "A",
-          "is_correct": true,
-          "clarification": "Correct."
-        },
-        {
-          "question_id": "q_637cbdab",
-          "section_id": 8,
-          "topic": "Known Bases, Safehouses, and Operational Territory",
-          "question": "What is another important focus of Section 8? (5)",
-          "options": {
-            "A": "Known Bases, Safehouses, and Operational Territory",
-            "B": "Unrelated financial accounting only",
-            "C": "Random social media content",
-            "D": "A cooking instruction section"
-          },
-          "correct_answer": "A",
-          "explanation": "Section 8 is titled 'Known Bases, Safehouses, and Operational Territory'.",
-          "adaptive_reason": null,
-          "generator": "fallback_rule_based",
           "user_answer": "B",
           "is_correct": false,
-          "clarification": "Wrong. Correct answer is A: Known Bases, Safehouses, and Operational Territory. Clarification: Section 8 is titled 'Known Bases, Safehouses, and Operational Territory'."
+          "clarification": "Wrong. Correct answer is A: Punta Arenas Node redundancy: each cell-led operation requires line-of-comms to at least 2 nodes.. Clarification: Punta Arenas Node redundancy: each cell-led operation requires line-of-comms to at least 2 nodes."
         }
       ],
       "score": {
@@ -207,14 +207,15 @@
         "accuracy": 60.0
       },
       "weak_topics": [
-        "Drop-Tune Manoeuvre",
         "Known Bases, Safehouses, and Operational Territory",
-        "Operational Tactics and Combat Doctrine"
+        "Operational Territory",
+        "Sequential Suspension",
+        "Three-Two-One Rule"
       ]
     },
     {
-      "session_id": "session_20260524_023003_911710",
-      "timestamp": "2026-05-24T02:30:03",
+      "session_id": "session_20260524_062553_333645",
+      "timestamp": "2026-05-24T06:25:53",
       "session_type": "adaptive",
       "sections": [
         6,
@@ -223,7 +224,45 @@
       ],
       "questions": [
         {
-          "question_id": "q_1991bb7f",
+          "section_id": 6,
+          "topic": "Allies",
+          "question": "How many formally maintained safehouses does the asset have within her operational territory?",
+          "options": {
+            "A": "0",
+            "B": "1",
+            "C": "2",
+            "D": "3"
+          },
+          "correct_answer": "A",
+          "explanation": "The asset has no information about safehouses.",
+          "adaptive_reason": null,
+          "generator": "ollama_llm",
+          "question_id": "q_1bcb2197",
+          "user_answer": "B",
+          "is_correct": false,
+          "clarification": "Wrong. Correct answer is A: 0. Clarification: The asset has no information about safehouses."
+        },
+        {
+          "section_id": 6,
+          "topic": "Allies",
+          "question": "Who is the Director of PAMC Operations Directorate, Lima?",
+          "options": {
+            "A": "Dr. Léon Marrón-Saavedra",
+            "B": "Director Aída Salvatierra-Bunge",
+            "C": "Dr. Maite Borghi-Castelnuovo",
+            "D": "Lt. Solène Bauer-Cortez"
+          },
+          "correct_answer": "B",
+          "explanation": "Director Aída Salvatierra-Bunge is the Director of PAMC Operations Directorate, Lima.",
+          "adaptive_reason": null,
+          "generator": "ollama_llm",
+          "question_id": "q_cf492ddc",
+          "user_answer": "B",
+          "is_correct": true,
+          "clarification": "Correct."
+        },
+        {
+          "question_id": "q_a2632a1c",
           "section_id": 6,
           "topic": "Safehouse Provisioning",
           "question": "According to Section 6, which statement best matches the topic 'Safehouse Provisioning'?",
@@ -237,12 +276,12 @@
           "explanation": "SLATEFALL is administratively assigned to the Andean Operations Bureau under the Operations Directorate.",
           "adaptive_reason": null,
           "generator": "fallback_rule_based",
-          "user_answer": "B",
-          "is_correct": false,
-          "clarification": "Wrong. Correct answer is A: SLATEFALL is administratively assigned to the Andean Operations Bureau under the Operations Directorate.. Clarification: SLATEFALL is administratively assigned to the Andean Operations Bureau under the Operations Directorate."
+          "user_answer": "A",
+          "is_correct": true,
+          "clarification": "Correct."
         },
         {
-          "question_id": "q_46133226",
+          "question_id": "q_2b332c48",
           "section_id": 6,
           "topic": "Cell Halcón",
           "question": "According to Section 6, which statement best matches the topic 'Cell Halcón'?",
@@ -256,12 +295,12 @@
           "explanation": "6.2 Cell Halcón Cell Halcón is the four-operative tactical unit under SLATEFALL's command.",
           "adaptive_reason": null,
           "generator": "fallback_rule_based",
-          "user_answer": "A",
-          "is_correct": true,
-          "clarification": "Correct."
+          "user_answer": "B",
+          "is_correct": false,
+          "clarification": "Wrong. Correct answer is A: 6.2 Cell Halcón Cell Halcón is the four-operative tactical unit under SLATEFALL's command.. Clarification: 6.2 Cell Halcón Cell Halcón is the four-operative tactical unit under SLATEFALL's command."
         },
         {
-          "question_id": "q_7ee7f773",
+          "question_id": "q_22edd7d7",
           "section_id": 6,
           "topic": "Allies, Networks, and Known Affiliations",
           "question": "According to Section 6, which statement best matches the topic 'Allies, Networks, and Known Affiliations'?",
@@ -280,48 +319,48 @@
           "clarification": "Correct."
         },
         {
-          "question_id": "q_dc202992",
-          "section_id": 6,
-          "topic": "Safehouse Provisioning",
-          "question": "In Section 6, what is the most accurate detail about 'Safehouse Provisioning'?",
+          "section_id": 8,
+          "topic": "Operational Territory",
+          "question": "According to Section 8, which statement best matches the topic 'Known Bases, Safehouses, and Operational Territory'?",
           "options": {
-            "A": "Raúl Vendrame Field Medic Civilian 18 Jan 2023 The cell is rated for Tier 4 engagements and has logged 47 operations as a complete unit through 31 December 2025.",
-            "B": "It describes a minor glossary term with no operational relevance.",
-            "C": "It only refers to public media restrictions.",
-            "D": "It refers to a retired equipment archive only."
+            "A": "The asset's authorized operational territory spans approximately 6.8 million km².",
+            "B": "The asset has access to five formally maintained safehouses within her operational territory.",
+            "C": "Safehouse provisioning is audited semi-annually by Cpl. Vendrame on behalf of the cell.",
+            "D": "Each safehouse maintains a standardized provisioning standard."
           },
           "correct_answer": "A",
-          "explanation": "Raúl Vendrame Field Medic Civilian 18 Jan 2023 The cell is rated for Tier 4 engagements and has logged 47 operations as a complete unit through 31 December 2025.",
-          "adaptive_reason": null,
-          "generator": "fallback_rule_based",
-          "user_answer": "B",
-          "is_correct": false,
-          "clarification": "Wrong. Correct answer is A: Raúl Vendrame Field Medic Civilian 18 Jan 2023 The cell is rated for Tier 4 engagements and has logged 47 operations as a complete unit through 31 December 2025.. Clarification: Raúl Vendrame Field Medic Civilian 18 Jan 2023 The cell is rated for Tier 4 engagements and has logged 47 operations as a complete unit through 31 December 2025."
-        },
-        {
-          "question_id": "q_307d4ea9",
-          "section_id": 6,
-          "topic": "Allies, Networks, and Known Affiliations",
-          "question": "In Section 6, what is the most accurate detail about 'Allies, Networks, and Known Affiliations'?",
-          "options": {
-            "A": "Léon Marrón-Saavedra Age 64, born Mérida, Venezuela Senior scientist, CBMP Co-author of the Calvache–Marrón Equations Conducts annual scientific re-evaluations of the asset's power (§2.19) Dr.",
-            "B": "It describes a minor glossary term with no operational relevance.",
-            "C": "It only refers to public media restrictions.",
-            "D": "It refers to a retired equipment archive only."
-          },
-          "correct_answer": "A",
-          "explanation": "Léon Marrón-Saavedra Age 64, born Mérida, Venezuela Senior scientist, CBMP Co-author of the Calvache–Marrón Equations Conducts annual scientific re-evaluations of the asset's power (§2.19) Dr.",
-          "adaptive_reason": null,
-          "generator": "fallback_rule_based",
+          "explanation": "The asset's authorized operational territory spans approximately 6.8 million km², encompassing the western and southern Andean states.",
+          "adaptive_reason": "Focused on previously missed topic: Operational Territory",
+          "generator": "ollama_llm",
+          "question_id": "q_2b7e6fcd",
           "user_answer": "A",
           "is_correct": true,
           "clarification": "Correct."
         },
         {
-          "question_id": "q_cd23a37c",
+          "section_id": 8,
+          "topic": "Safehouses",
+          "question": "According to Section 8, which statement best matches the topic 'Safehouse Provisioning'?",
+          "options": {
+            "A": "Each safehouse maintains a standardized provisioning standard.",
+            "B": "The asset has access to five formally maintained safehouses within her operational territory.",
+            "C": "Safehouse provisioning is audited semi-annually by Cpl. Vendrame on behalf of the cell.",
+            "D": "30-day rations for 4 personnel are provided in each safehouse."
+          },
+          "correct_answer": "A",
+          "explanation": "Each safehouse maintains a standardized provisioning standard, including 30-day rations for 4 personnel and other essential items.",
+          "adaptive_reason": null,
+          "generator": "ollama_llm",
+          "question_id": "q_b737072f",
+          "user_answer": "B",
+          "is_correct": false,
+          "clarification": "Wrong. Correct answer is A: Each safehouse maintains a standardized provisioning standard.. Clarification: Each safehouse maintains a standardized provisioning standard, including 30-day rations for 4 personnel and other essential items."
+        },
+        {
+          "question_id": "q_7d33cbca",
           "section_id": 8,
           "topic": "Known Bases, Safehouses, and Operational Territory",
-          "question": "According to Section 8, which statement best matches the topic 'Known Bases, Safehouses, and Operational Territory'?",
+          "question": "In Section 8, what is the most accurate detail about 'Known Bases, Safehouses, and Operational Territory'?",
           "options": {
             "A": "Two extra-territorial deployments have been authorized since 2019 (Quito 2021, Lima Pan-American Conference 2024).",
             "B": "It only refers to public media restrictions.",
@@ -337,26 +376,7 @@
           "clarification": "Correct."
         },
         {
-          "question_id": "q_839a9460",
-          "section_id": 8,
-          "topic": "Known Bases, Safehouses, and Operational Territory",
-          "question": "In Section 8, what is the most accurate detail about 'Known Bases, Safehouses, and Operational Territory'?",
-          "options": {
-            "A": "Punta Arenas Node redundancy: each cell-led operation requires line-of-comms to at least 2 nodes.",
-            "B": "It only refers to public media restrictions.",
-            "C": "It refers to a retired equipment archive only.",
-            "D": "It is a general historical footnote without tactical use."
-          },
-          "correct_answer": "A",
-          "explanation": "Punta Arenas Node redundancy: each cell-led operation requires line-of-comms to at least 2 nodes.",
-          "adaptive_reason": "Focused on previously missed topic: Known Bases, Safehouses, and Operational Territory",
-          "generator": "fallback_rule_based",
-          "user_answer": "B",
-          "is_correct": false,
-          "clarification": "Wrong. Correct answer is A: Punta Arenas Node redundancy: each cell-led operation requires line-of-comms to at least 2 nodes.. Clarification: Punta Arenas Node redundancy: each cell-led operation requires line-of-comms to at least 2 nodes."
-        },
-        {
-          "question_id": "q_cc0b1844",
+          "question_id": "q_7f74db4f",
           "section_id": 8,
           "topic": "Safehouse Provisioning",
           "question": "In Section 8, what is the most accurate detail about 'Safehouse Provisioning'?",
@@ -375,29 +395,10 @@
           "clarification": "Correct."
         },
         {
-          "question_id": "q_cbdf8b97",
+          "question_id": "q_fd616837",
           "section_id": 8,
           "topic": "Known Bases, Safehouses, and Operational Territory",
-          "question": "What is another important focus of Section 8? (4)",
-          "options": {
-            "A": "Known Bases, Safehouses, and Operational Territory",
-            "B": "Unrelated financial accounting only",
-            "C": "Random social media content",
-            "D": "A cooking instruction section"
-          },
-          "correct_answer": "A",
-          "explanation": "Section 8 is titled 'Known Bases, Safehouses, and Operational Territory'.",
-          "adaptive_reason": null,
-          "generator": "fallback_rule_based",
-          "user_answer": "A",
-          "is_correct": true,
-          "clarification": "Correct."
-        },
-        {
-          "question_id": "q_d5a100f9",
-          "section_id": 8,
-          "topic": "Known Bases, Safehouses, and Operational Territory",
-          "question": "What is another important focus of Section 8? (5)",
+          "question": "What is another important focus of Section 8? (3)",
           "options": {
             "A": "Known Bases, Safehouses, and Operational Territory",
             "B": "Unrelated financial accounting only",
@@ -413,7 +414,45 @@
           "clarification": "Wrong. Correct answer is A: Known Bases, Safehouses, and Operational Territory. Clarification: Section 8 is titled 'Known Bases, Safehouses, and Operational Territory'."
         },
         {
-          "question_id": "q_14841e20",
+          "section_id": 9,
+          "topic": "Case File Format",
+          "question": "What is the format of all cases recorded under?",
+          "options": {
+            "A": "PAMC format",
+            "B": "SLATEFALL_DOSSIER.md",
+            "C": "Case number (year-sequence)",
+            "D": "Date (start–end)"
+          },
+          "correct_answer": "A",
+          "explanation": "All cases are recorded under a uniform PAMC format",
+          "adaptive_reason": null,
+          "generator": "ollama_llm",
+          "question_id": "q_c41834c6",
+          "user_answer": "A",
+          "is_correct": true,
+          "clarification": "Correct."
+        },
+        {
+          "section_id": 9,
+          "topic": "Case 2023-0067: El Sereno Pursuit",
+          "question": "What was the outcome of the operation in Case 2023-0067?",
+          "options": {
+            "A": "Successful",
+            "B": "Inconclusive",
+            "C": "Pyrrhic",
+            "D": "Catastrophic"
+          },
+          "correct_answer": "B",
+          "explanation": "The operation was inconclusive, with no casualties on either side",
+          "adaptive_reason": null,
+          "generator": "ollama_llm",
+          "question_id": "q_e385adcc",
+          "user_answer": "B",
+          "is_correct": true,
+          "clarification": "Correct."
+        },
+        {
+          "question_id": "q_a823592b",
           "section_id": 9,
           "topic": "Threat Tier Classification",
           "question": "According to Section 9, which statement best matches the topic 'Threat Tier Classification'?",
@@ -427,12 +466,12 @@
           "explanation": "The escaped adversary subsequently identified as a low-tier Concession affiliate.",
           "adaptive_reason": null,
           "generator": "fallback_rule_based",
-          "user_answer": "A",
-          "is_correct": true,
-          "clarification": "Correct."
+          "user_answer": "B",
+          "is_correct": false,
+          "clarification": "Wrong. Correct answer is A: The escaped adversary subsequently identified as a low-tier Concession affiliate.. Clarification: The escaped adversary subsequently identified as a low-tier Concession affiliate."
         },
         {
-          "question_id": "q_d8c90c3f",
+          "question_id": "q_02ace769",
           "section_id": 9,
           "topic": "Threat Tier Classification",
           "question": "In Section 9, what is the most accurate detail about 'Threat Tier Classification'?",
@@ -451,7 +490,7 @@
           "clarification": "Correct."
         },
         {
-          "question_id": "q_f442e1a7",
+          "question_id": "q_099622fb",
           "section_id": 9,
           "topic": "Doctrine of Sequential Suspension",
           "question": "According to Section 9, which statement best matches the topic 'Doctrine of Sequential Suspension'?",
@@ -463,44 +502,6 @@
           },
           "correct_answer": "A",
           "explanation": "Adolfo Yáñez-Ríos, Cell Cóndor); 3 civilians killed Adversary casualties: Tropopausa contained but escaped after 8 hours Notes: Engagement triggered formal articulation of the Doctrine of Sequential Suspension.",
-          "adaptive_reason": null,
-          "generator": "fallback_rule_based",
-          "user_answer": "B",
-          "is_correct": false,
-          "clarification": "Wrong. Correct answer is A: Adolfo Yáñez-Ríos, Cell Cóndor); 3 civilians killed Adversary casualties: Tropopausa contained but escaped after 8 hours Notes: Engagement triggered formal articulation of the Doctrine of Sequential Suspension.. Clarification: Adolfo Yáñez-Ríos, Cell Cóndor); 3 civilians killed Adversary casualties: Tropopausa contained but escaped after 8 hours Notes: Engagement triggered formal articulation of the Doctrine of Sequential Suspension."
-        },
-        {
-          "question_id": "q_0d7bd509",
-          "section_id": 9,
-          "topic": "Cell Halcón",
-          "question": "According to Section 9, which statement best matches the topic 'Cell Halcón'?",
-          "options": {
-            "A": "Quispe-Linares, leg laceration, 8-day recovery) Adversary casualties: 14 Concession affiliates captured; 2 killed in firefight; 1 metahuman (\"Cataract\") escaped Notes: Major operational success demonstrating Cell Halcón's full capability.",
-            "B": "It is mainly a civilian biography detail.",
-            "C": "It describes a non-operational background note.",
-            "D": "It only identifies a location name without any function."
-          },
-          "correct_answer": "A",
-          "explanation": "Quispe-Linares, leg laceration, 8-day recovery) Adversary casualties: 14 Concession affiliates captured; 2 killed in firefight; 1 metahuman (\"Cataract\") escaped Notes: Major operational success demonstrating Cell Halcón's full capability.",
-          "adaptive_reason": null,
-          "generator": "fallback_rule_based",
-          "user_answer": "A",
-          "is_correct": true,
-          "clarification": "Correct."
-        },
-        {
-          "question_id": "q_f62bebb1",
-          "section_id": 9,
-          "topic": "Case Files: Documented Engagements and Incidents",
-          "question": "According to Section 9, which statement best matches the topic 'Case Files: Documented Engagements and Incidents'?",
-          "options": {
-            "A": "Case remains the asset's most prominent operational failure and is a featured case study at Lima Academy.",
-            "B": "It is mainly a civilian biography detail.",
-            "C": "It describes a non-operational background note.",
-            "D": "It only identifies a location name without any function."
-          },
-          "correct_answer": "A",
-          "explanation": "Case remains the asset's most prominent operational failure and is a featured case study at Lima Academy.",
           "adaptive_reason": null,
           "generator": "fallback_rule_based",
           "user_answer": "A",
@@ -515,21 +516,61 @@
         "accuracy": 66.67
       },
       "weak_topics": [
-        "Doctrine of Sequential Suspension",
+        "Allies",
+        "Cell Halcón",
         "Known Bases, Safehouses, and Operational Territory",
-        "Safehouse Provisioning"
+        "Safehouses",
+        "Threat Tier Classification"
       ]
     },
     {
-      "session_id": "session_20260524_023004_277577",
-      "timestamp": "2026-05-24T02:30:04",
+      "session_id": "session_20260524_063208_960345",
+      "timestamp": "2026-05-24T06:32:08",
       "session_type": "adaptive",
       "sections": [
         8
       ],
       "questions": [
         {
-          "question_id": "q_e2671745",
+          "section_id": 8,
+          "topic": "Safehouse Provisioning",
+          "question": "Each safehouse maintains a standardized provisioning standard:",
+          "options": {
+            "A": "30-day rations for 4 personnel",
+            "B": "Yatiri-2 backup comms unit",
+            "C": "6 baton-cache replacement set",
+            "D": "2,000 USD-equivalent local currency in mixed denominations"
+          },
+          "correct_answer": "A",
+          "explanation": "The asset has access to five formally maintained safehouses within her operational territory.",
+          "adaptive_reason": null,
+          "generator": "ollama_llm",
+          "question_id": "q_61ca37f0",
+          "user_answer": "B",
+          "is_correct": false,
+          "clarification": "Wrong. Correct answer is A: 30-day rations for 4 personnel. Clarification: The asset has access to five formally maintained safehouses within her operational territory."
+        },
+        {
+          "section_id": 8,
+          "topic": "Operational Territory",
+          "question": "The asset's authorized operational territory spans approximately how many km²?",
+          "options": {
+            "A": "6.8 million",
+            "B": "10 million",
+            "C": "20 million",
+            "D": "30 million"
+          },
+          "correct_answer": "A",
+          "explanation": "The asset's authorized operational territory spans approximately 6.8 million km².",
+          "adaptive_reason": "Focused on previously missed topic: Operational Territory",
+          "generator": "ollama_llm",
+          "question_id": "q_57c28cae",
+          "user_answer": "A",
+          "is_correct": true,
+          "clarification": "Correct."
+        },
+        {
+          "question_id": "q_842985d4",
           "section_id": 8,
           "topic": "Known Bases, Safehouses, and Operational Territory",
           "question": "In Section 8, what is the most accurate detail about 'Known Bases, Safehouses, and Operational Territory'?",
@@ -543,12 +584,12 @@
           "explanation": "Two extra-territorial deployments have been authorized since 2019 (Quito 2021, Lima Pan-American Conference 2024).",
           "adaptive_reason": "Focused on previously missed topic: Known Bases, Safehouses, and Operational Territory",
           "generator": "fallback_rule_based",
-          "user_answer": "B",
-          "is_correct": false,
-          "clarification": "Wrong. Correct answer is A: Two extra-territorial deployments have been authorized since 2019 (Quito 2021, Lima Pan-American Conference 2024).. Clarification: Two extra-territorial deployments have been authorized since 2019 (Quito 2021, Lima Pan-American Conference 2024)."
+          "user_answer": "A",
+          "is_correct": true,
+          "clarification": "Correct."
         },
         {
-          "question_id": "q_9dc58cb3",
+          "question_id": "q_31269792",
           "section_id": 8,
           "topic": "Safehouse Provisioning",
           "question": "In Section 8, what is the most accurate detail about 'Safehouse Provisioning'?",
@@ -562,53 +603,15 @@
           "explanation": "Known Bases, Safehouses, and Operational Territory 8.1 Primary Base: Cuartel Valparaíso The asset's primary operational base is Cuartel Valparaíso, designated PAMC South Cone Headquarters.",
           "adaptive_reason": null,
           "generator": "fallback_rule_based",
-          "user_answer": "A",
-          "is_correct": true,
-          "clarification": "Correct."
+          "user_answer": "B",
+          "is_correct": false,
+          "clarification": "Wrong. Correct answer is A: Known Bases, Safehouses, and Operational Territory 8.1 Primary Base: Cuartel Valparaíso The asset's primary operational base is Cuartel Valparaíso, designated PAMC South Cone Headquarters.. Clarification: Known Bases, Safehouses, and Operational Territory 8.1 Primary Base: Cuartel Valparaíso The asset's primary operational base is Cuartel Valparaíso, designated PAMC South Cone Headquarters."
         },
         {
-          "question_id": "q_e1cbbc05",
+          "question_id": "q_adaee093",
           "section_id": 8,
           "topic": "Known Bases, Safehouses, and Operational Territory",
           "question": "What is another important focus of Section 8? (3)",
-          "options": {
-            "A": "Known Bases, Safehouses, and Operational Territory",
-            "B": "Unrelated financial accounting only",
-            "C": "Random social media content",
-            "D": "A cooking instruction section"
-          },
-          "correct_answer": "A",
-          "explanation": "Section 8 is titled 'Known Bases, Safehouses, and Operational Territory'.",
-          "adaptive_reason": null,
-          "generator": "fallback_rule_based",
-          "user_answer": "A",
-          "is_correct": true,
-          "clarification": "Correct."
-        },
-        {
-          "question_id": "q_9905abd7",
-          "section_id": 8,
-          "topic": "Known Bases, Safehouses, and Operational Territory",
-          "question": "What is another important focus of Section 8? (4)",
-          "options": {
-            "A": "Known Bases, Safehouses, and Operational Territory",
-            "B": "Unrelated financial accounting only",
-            "C": "Random social media content",
-            "D": "A cooking instruction section"
-          },
-          "correct_answer": "A",
-          "explanation": "Section 8 is titled 'Known Bases, Safehouses, and Operational Territory'.",
-          "adaptive_reason": null,
-          "generator": "fallback_rule_based",
-          "user_answer": "B",
-          "is_correct": false,
-          "clarification": "Wrong. Correct answer is A: Known Bases, Safehouses, and Operational Territory. Clarification: Section 8 is titled 'Known Bases, Safehouses, and Operational Territory'."
-        },
-        {
-          "question_id": "q_388142a0",
-          "section_id": 8,
-          "topic": "Known Bases, Safehouses, and Operational Territory",
-          "question": "What is another important focus of Section 8? (5)",
           "options": {
             "A": "Known Bases, Safehouses, and Operational Territory",
             "B": "Unrelated financial accounting only",
@@ -631,7 +634,7 @@
         "accuracy": 60.0
       },
       "weak_topics": [
-        "Known Bases, Safehouses, and Operational Territory"
+        "Safehouse Provisioning"
       ]
     }
   ]

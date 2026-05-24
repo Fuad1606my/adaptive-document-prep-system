@@ -1,6 +1,6 @@
 {
-  "session_id": "session_20260524_023004_277577",
-  "timestamp": "2026-05-24T02:30:04",
+  "session_id": "session_20260524_063208_960345",
+  "timestamp": "2026-05-24T06:32:08",
   "session_type": "adaptive",
   "sections": [
     8
@@ -12,11 +12,49 @@
     "accuracy": 60.0
   },
   "weak_topics": [
-    "Known Bases, Safehouses, and Operational Territory"
+    "Safehouse Provisioning"
   ],
   "questions": [
     {
-      "question_id": "q_e2671745",
+      "section_id": 8,
+      "topic": "Safehouse Provisioning",
+      "question": "Each safehouse maintains a standardized provisioning standard:",
+      "options": {
+        "A": "30-day rations for 4 personnel",
+        "B": "Yatiri-2 backup comms unit",
+        "C": "6 baton-cache replacement set",
+        "D": "2,000 USD-equivalent local currency in mixed denominations"
+      },
+      "correct_answer": "A",
+      "explanation": "The asset has access to five formally maintained safehouses within her operational territory.",
+      "adaptive_reason": null,
+      "generator": "ollama_llm",
+      "question_id": "q_61ca37f0",
+      "user_answer": "B",
+      "is_correct": false,
+      "clarification": "Wrong. Correct answer is A: 30-day rations for 4 personnel. Clarification: The asset has access to five formally maintained safehouses within her operational territory."
+    },
+    {
+      "section_id": 8,
+      "topic": "Operational Territory",
+      "question": "The asset's authorized operational territory spans approximately how many km²?",
+      "options": {
+        "A": "6.8 million",
+        "B": "10 million",
+        "C": "20 million",
+        "D": "30 million"
+      },
+      "correct_answer": "A",
+      "explanation": "The asset's authorized operational territory spans approximately 6.8 million km².",
+      "adaptive_reason": "Focused on previously missed topic: Operational Territory",
+      "generator": "ollama_llm",
+      "question_id": "q_57c28cae",
+      "user_answer": "A",
+      "is_correct": true,
+      "clarification": "Correct."
+    },
+    {
+      "question_id": "q_842985d4",
       "section_id": 8,
       "topic": "Known Bases, Safehouses, and Operational Territory",
       "question": "In Section 8, what is the most accurate detail about 'Known Bases, Safehouses, and Operational Territory'?",
@@ -30,12 +68,12 @@
       "explanation": "Two extra-territorial deployments have been authorized since 2019 (Quito 2021, Lima Pan-American Conference 2024).",
       "adaptive_reason": "Focused on previously missed topic: Known Bases, Safehouses, and Operational Territory",
       "generator": "fallback_rule_based",
-      "user_answer": "B",
-      "is_correct": false,
-      "clarification": "Wrong. Correct answer is A: Two extra-territorial deployments have been authorized since 2019 (Quito 2021, Lima Pan-American Conference 2024).. Clarification: Two extra-territorial deployments have been authorized since 2019 (Quito 2021, Lima Pan-American Conference 2024)."
+      "user_answer": "A",
+      "is_correct": true,
+      "clarification": "Correct."
     },
     {
-      "question_id": "q_9dc58cb3",
+      "question_id": "q_31269792",
       "section_id": 8,
       "topic": "Safehouse Provisioning",
       "question": "In Section 8, what is the most accurate detail about 'Safehouse Provisioning'?",
@@ -49,53 +87,15 @@
       "explanation": "Known Bases, Safehouses, and Operational Territory 8.1 Primary Base: Cuartel Valparaíso The asset's primary operational base is Cuartel Valparaíso, designated PAMC South Cone Headquarters.",
       "adaptive_reason": null,
       "generator": "fallback_rule_based",
-      "user_answer": "A",
-      "is_correct": true,
-      "clarification": "Correct."
+      "user_answer": "B",
+      "is_correct": false,
+      "clarification": "Wrong. Correct answer is A: Known Bases, Safehouses, and Operational Territory 8.1 Primary Base: Cuartel Valparaíso The asset's primary operational base is Cuartel Valparaíso, designated PAMC South Cone Headquarters.. Clarification: Known Bases, Safehouses, and Operational Territory 8.1 Primary Base: Cuartel Valparaíso The asset's primary operational base is Cuartel Valparaíso, designated PAMC South Cone Headquarters."
     },
     {
-      "question_id": "q_e1cbbc05",
+      "question_id": "q_adaee093",
       "section_id": 8,
       "topic": "Known Bases, Safehouses, and Operational Territory",
       "question": "What is another important focus of Section 8? (3)",
-      "options": {
-        "A": "Known Bases, Safehouses, and Operational Territory",
-        "B": "Unrelated financial accounting only",
-        "C": "Random social media content",
-        "D": "A cooking instruction section"
-      },
-      "correct_answer": "A",
-      "explanation": "Section 8 is titled 'Known Bases, Safehouses, and Operational Territory'.",
-      "adaptive_reason": null,
-      "generator": "fallback_rule_based",
-      "user_answer": "A",
-      "is_correct": true,
-      "clarification": "Correct."
-    },
-    {
-      "question_id": "q_9905abd7",
-      "section_id": 8,
-      "topic": "Known Bases, Safehouses, and Operational Territory",
-      "question": "What is another important focus of Section 8? (4)",
-      "options": {
-        "A": "Known Bases, Safehouses, and Operational Territory",
-        "B": "Unrelated financial accounting only",
-        "C": "Random social media content",
-        "D": "A cooking instruction section"
-      },
-      "correct_answer": "A",
-      "explanation": "Section 8 is titled 'Known Bases, Safehouses, and Operational Territory'.",
-      "adaptive_reason": null,
-      "generator": "fallback_rule_based",
-      "user_answer": "B",
-      "is_correct": false,
-      "clarification": "Wrong. Correct answer is A: Known Bases, Safehouses, and Operational Territory. Clarification: Section 8 is titled 'Known Bases, Safehouses, and Operational Territory'."
-    },
-    {
-      "question_id": "q_388142a0",
-      "section_id": 8,
-      "topic": "Known Bases, Safehouses, and Operational Territory",
-      "question": "What is another important focus of Section 8? (5)",
       "options": {
         "A": "Known Bases, Safehouses, and Operational Territory",
         "B": "Unrelated financial accounting only",

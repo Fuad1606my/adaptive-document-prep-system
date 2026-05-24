@@ -3,6 +3,7 @@ import uuid
 from typing import Any, Dict, List
 
 from src.section_mapper import SECTION_TITLES
+from src.llm_client import generate_mcqs_with_ollama
 
 
 def _clean_text(text: str) -> str:
@@ -12,7 +13,7 @@ def _clean_text(text: str) -> str:
 def _extract_candidate_sentences(section_text: str, max_sentences: int = 20) -> List[str]:
     """
     Extract useful factual-looking sentences from section text.
-    This is a deterministic fallback when no external LLM is available.
+    This is a deterministic fallback when Ollama is unavailable or returns invalid JSON.
     """
     cleaned = _clean_text(section_text)
 
@@ -123,6 +124,20 @@ def _make_options(correct_answer: str, section_id: int, topic: str) -> Dict[str,
     return options
 
 
+def _add_question_ids(questions: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+    """
+    Ensure every question has a unique question_id.
+    """
+    prepared = []
+
+    for question in questions:
+        q = dict(question)
+        q["question_id"] = q.get("question_id") or f"q_{uuid.uuid4().hex[:8]}"
+        prepared.append(q)
+
+    return prepared
+
+
 def generate_fallback_mcqs(
     section_id: int,
     section_text: str,
@@ -131,8 +146,8 @@ def generate_fallback_mcqs(
     mastered_questions: List[str] | None = None,
 ) -> List[Dict[str, Any]]:
     """
-    Generate MCQs without using a paid API.
-    This ensures the project runs locally for reviewers.
+    Generate MCQs without using an LLM.
+    This ensures the project runs locally even if Ollama is not installed/running.
     """
     weak_topics = weak_topics or []
     mastered_questions = mastered_questions or []
@@ -141,7 +156,6 @@ def generate_fallback_mcqs(
 
     weak_topic_names = [item["topic"] for item in weak_topics]
 
-    # Prioritize weak-topic sentences if this is an adaptive run.
     prioritized = []
     normal = []
 
@@ -198,7 +212,6 @@ def generate_fallback_mcqs(
 
         used_questions.add(question_text)
 
-    # If not enough factual sentences found, fill with generic section questions.
     while len(mcqs) < n:
         topic = SECTION_TITLES.get(section_id, f"Section {section_id}")
         question_text = f"What is Section {section_id} mainly about?"
@@ -238,8 +251,17 @@ def generate_mcqs_for_sections(
 ) -> List[Dict[str, Any]]:
     """
     Generate MCQs for selected sections.
-    Currently uses a robust fallback generator.
-    External LLM integration can be plugged in later.
+
+    Primary generator:
+    - Ollama local LLM
+
+    Safe fallback:
+    - deterministic rule-based generator
+
+    Robust local-LLM design:
+    - Local models are more reliable when asked for small batches.
+    - Therefore, Ollama is called in batches of 1-2 questions.
+    - If Ollama produces fewer valid questions than required, fallback fills the rest.
     """
     all_questions = []
 
@@ -247,19 +269,73 @@ def generate_mcqs_for_sections(
         if section_id not in sections:
             raise ValueError(f"Invalid section ID: {section_id}")
 
+        section_title = SECTION_TITLES.get(section_id, f"Section {section_id}")
+
         section_weak_topics = [
             item for item in (weak_topics or [])
             if section_id in item.get("sections", [])
         ]
 
-        questions = generate_fallback_mcqs(
-            section_id=section_id,
-            section_text=sections[section_id],
-            n=n_per_section,
-            weak_topics=section_weak_topics,
-            mastered_questions=mastered_questions or [],
-        )
+        questions = []
+        existing_question_texts = set()
 
-        all_questions.extend(questions)
+        # Try Ollama in small batches for local-model reliability.
+        max_ollama_attempts = 4
+
+        for _ in range(max_ollama_attempts):
+            remaining = n_per_section - len(questions)
+
+            if remaining <= 0:
+                break
+
+            request_size = min(2, remaining)
+
+            ollama_questions = generate_mcqs_with_ollama(
+                section_id=section_id,
+                section_title=section_title,
+                section_text=sections[section_id],
+                n=request_size,
+                weak_topics=section_weak_topics,
+                mastered_questions=(mastered_questions or []) + list(existing_question_texts),
+            )
+
+            if not ollama_questions:
+                continue
+
+            for ollama_question in _add_question_ids(ollama_questions):
+                if len(questions) >= n_per_section:
+                    break
+
+                question_text = ollama_question.get("question", "")
+                if question_text in existing_question_texts:
+                    continue
+
+                questions.append(ollama_question)
+                existing_question_texts.add(question_text)
+
+        # Fill remaining slots with fallback questions.
+        remaining = n_per_section - len(questions)
+
+        if remaining > 0:
+            fallback_questions = generate_fallback_mcqs(
+                section_id=section_id,
+                section_text=sections[section_id],
+                n=remaining,
+                weak_topics=section_weak_topics,
+                mastered_questions=(mastered_questions or []) + list(existing_question_texts),
+            )
+
+            for fallback_question in fallback_questions:
+                if len(questions) >= n_per_section:
+                    break
+
+                question_text = fallback_question.get("question", "")
+                if question_text in existing_question_texts:
+                    continue
+
+                questions.append(fallback_question)
+                existing_question_texts.add(question_text)
+
+        all_questions.extend(questions[:n_per_section])
 
     return all_questions
