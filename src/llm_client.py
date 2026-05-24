@@ -1,4 +1,5 @@
 import json
+import os
 import re
 from typing import Any, Dict, List, Optional
 
@@ -9,11 +10,20 @@ OLLAMA_URL = "http://localhost:11434/api/chat"
 OLLAMA_MODEL = "llama3.2:3b"
 OLLAMA_TIMEOUT_SECONDS = 120
 
+# Cloud-safe toggle:
+# Local default = true, so Ollama works on your computer.
+# Streamlit Cloud should set USE_OLLAMA=false so the app uses fallback generation.
+USE_OLLAMA = os.getenv("USE_OLLAMA", "true").lower() == "true"
+
 
 def is_ollama_available() -> bool:
     """
     Check whether Ollama local server is reachable.
+    If USE_OLLAMA=false, skip Ollama completely.
     """
+    if not USE_OLLAMA:
+        return False
+
     try:
         response = requests.get("http://localhost:11434/api/tags", timeout=5)
         return response.status_code == 200
@@ -149,9 +159,12 @@ def generate_mcqs_with_ollama(
 ) -> Optional[List[Dict[str, Any]]]:
     """
     Generate MCQs using local Ollama.
-    Returns None if Ollama is unavailable or response validation fails.
+    Returns None if Ollama is disabled, unavailable, or response validation fails.
     The caller should then use fallback generation.
     """
+    if not USE_OLLAMA:
+        return None
+
     weak_topics = weak_topics or []
     mastered_questions = mastered_questions or []
 
@@ -268,4 +281,3 @@ Section text:
 
     except Exception:
         return None
-        
