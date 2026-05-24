@@ -636,6 +636,64 @@
         "Operational Territory",
         "Safehouse Provisioning"
       ]
+    },
+    {
+      "session_id": "session_20260524_160315_816995",
+      "timestamp": "2026-05-24T16:03:15",
+      "session_type": "adaptive",
+      "sections": [
+        5,
+        8
+      ],
+      "questions": [
+        {
+          "section_id": 5,
+          "topic": "Sequential Suspension",
+          "question": "The Doctrine of Sequential Suspension (DSS) rests on six core principles.",
+          "options": {
+            "A": "Suspension is a continuous capability, not a decisive resource.",
+            "B": "Sequence determines lethality. A single suspension rarely wins an engagement; ordered chains of three define the doctrine.",
+            "C": "Acquisition is the vulnerability. Protect the 1.2-second targeting window above all.",
+            "D": "Withdraw before exhaustion. Three activations and reset."
+          },
+          "correct_answer": "B",
+          "explanation": "The correct answer reflects the core principle that sequence determines lethality in the Doctrine of Sequential Suspension.",
+          "adaptive_reason": "Focused on previously missed topic: Sequential Suspension",
+          "generator": "ollama_llm",
+          "question_id": "q_038a9de2",
+          "user_answer": "A",
+          "is_correct": false,
+          "clarification": "Wrong. Correct answer is B: Sequence determines lethality. A single suspension rarely wins an engagement; ordered chains of three define the doctrine.. Clarification: The correct answer reflects the core principle that sequence determines lethality in the Doctrine of Sequential Suspension."
+        },
+        {
+          "section_id": 8,
+          "topic": "Safehouse Provisioning",
+          "question": "According to Section 8, which statement best matches the topic 'Safehouse Provisioning'?",
+          "options": {
+            "A": "Each safehouse maintains a standardized provisioning standard: 30-day rations for 4 personnel, Yatiri-2 backup comms unit, 6 baton-cache replacement set, and 2 Calexin-7 spare blister packs.",
+            "B": "Safehouse provisioning is audited quarterly by Cpl. Vendrame on behalf of the cell.",
+            "C": "The asset has access to five formally maintained safehouses within her operational territory.",
+            "D": "Each safehouse maintains a standardized provisioning standard: 30-day rations for 4 personnel, Yatiri-2 backup comms unit, 6 baton-cache replacement set, and $400 equivalent local currency."
+          },
+          "correct_answer": "A",
+          "explanation": "The correct answer is A because the provided text states that each safehouse maintains a standardized provisioning standard: 30-day rations for 4 personnel, Yatiri-2 backup comms unit, 6 baton-cache replacement set, and 2 Calexin-7 spare blister packs.",
+          "adaptive_reason": "Focused on previously missed topic: Safehouse Provisioning",
+          "generator": "ollama_llm",
+          "question_id": "q_9e5edd30",
+          "user_answer": "A",
+          "is_correct": true,
+          "clarification": "Correct."
+        }
+      ],
+      "score": {
+        "total": 2,
+        "correct": 1,
+        "wrong": 1,
+        "accuracy": 50.0
+      },
+      "weak_topics": [
+        "Sequential Suspension"
+      ]
     }
   ]
 }

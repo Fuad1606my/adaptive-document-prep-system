@@ -27,117 +27,246 @@ st.set_page_config(
 st.markdown(
     """
     <style>
-    .main {
-        background: linear-gradient(135deg, #0b1020 0%, #111827 45%, #06121f 100%);
+    :root {
+        --app-bg: #0b1020;
+        --app-bg-2: #111827;
+        --card-bg: rgba(15, 23, 42, 0.88);
+        --card-bg-soft: rgba(15, 23, 42, 0.70);
+        --border-soft: rgba(255, 255, 255, 0.12);
+        --text-main: #f8fafc;
+        --text-muted: #cbd5e1;
+        --text-soft: #94a3b8;
+        --green: #22c55e;
+        --red: #ef4444;
+        --blue: #3b82f6;
+        --cyan: #06b6d4;
+    }
+
+    html,
+    body,
+    [class*="css"] {
+        color: var(--text-main) !important;
+    }
+
+    [data-testid="stAppViewContainer"] {
+        background: linear-gradient(135deg, #0b1020 0%, #111827 48%, #06121f 100%) !important;
+        color: var(--text-main) !important;
+    }
+
+    [data-testid="stHeader"] {
+        background: rgba(11, 16, 32, 0.78) !important;
+        backdrop-filter: blur(14px);
     }
 
     [data-testid="stSidebar"] {
-        background: linear-gradient(180deg, #111827 0%, #1f2937 100%);
-        border-right: 1px solid rgba(255,255,255,0.08);
+        background: linear-gradient(180deg, #0f172a 0%, #111827 100%) !important;
+        border-right: 1px solid var(--border-soft);
+    }
+
+    [data-testid="stSidebar"] * {
+        color: var(--text-main) !important;
+    }
+
+    .block-container {
+        padding-top: 2rem;
+        padding-bottom: 3rem;
+        max-width: 1400px;
+    }
+
+    h1, h2, h3, h4, h5, h6, p, label, span, div {
+        color: var(--text-main);
     }
 
     .hero-card {
-        padding: 28px 32px;
-        border-radius: 24px;
-        background: linear-gradient(135deg, rgba(37,99,235,0.18), rgba(16,185,129,0.10));
-        border: 1px solid rgba(255,255,255,0.10);
-        box-shadow: 0 18px 45px rgba(0,0,0,0.25);
-        margin-bottom: 22px;
+        padding: 30px 34px;
+        border-radius: 26px;
+        background:
+            radial-gradient(circle at top left, rgba(34, 197, 94, 0.22), transparent 34%),
+            linear-gradient(135deg, rgba(37, 99, 235, 0.20), rgba(15, 23, 42, 0.96));
+        border: 1px solid var(--border-soft);
+        box-shadow: 0 20px 55px rgba(0, 0, 0, 0.32);
+        margin-bottom: 24px;
     }
 
     .hero-title {
-        font-size: 44px;
-        font-weight: 800;
-        line-height: 1.1;
-        color: #f8fafc;
-        margin-bottom: 10px;
+        font-size: clamp(30px, 4vw, 48px);
+        font-weight: 850;
+        line-height: 1.08;
+        color: var(--text-main) !important;
+        margin-bottom: 12px;
+        letter-spacing: -0.04em;
     }
 
     .hero-subtitle {
-        font-size: 17px;
-        color: #cbd5e1;
-        max-width: 980px;
+        font-size: clamp(15px, 1.5vw, 18px);
+        color: var(--text-muted) !important;
+        max-width: 1000px;
+        line-height: 1.65;
     }
 
     .badge-row {
-        margin-top: 18px;
+        margin-top: 20px;
         display: flex;
         gap: 10px;
         flex-wrap: wrap;
     }
 
     .badge {
-        padding: 7px 12px;
+        padding: 8px 13px;
         border-radius: 999px;
         font-size: 13px;
-        font-weight: 600;
-        background: rgba(15,23,42,0.65);
-        color: #e5e7eb;
-        border: 1px solid rgba(255,255,255,0.12);
+        font-weight: 700;
+        background: rgba(15, 23, 42, 0.78);
+        color: #e5e7eb !important;
+        border: 1px solid rgba(255,255,255,0.14);
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.08);
     }
 
     .metric-card {
         padding: 20px;
-        border-radius: 18px;
-        background: rgba(15,23,42,0.78);
-        border: 1px solid rgba(255,255,255,0.10);
-        box-shadow: 0 12px 28px rgba(0,0,0,0.22);
+        border-radius: 20px;
+        background: var(--card-bg);
+        border: 1px solid var(--border-soft);
+        box-shadow: 0 14px 32px rgba(0,0,0,0.25);
+        min-height: 112px;
     }
 
     .metric-label {
-        color: #94a3b8;
+        color: var(--text-soft) !important;
         font-size: 13px;
-        margin-bottom: 4px;
+        margin-bottom: 6px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
     }
 
     .metric-value {
-        color: #f8fafc;
-        font-size: 34px;
-        font-weight: 800;
+        color: var(--text-main) !important;
+        font-size: clamp(24px, 2.5vw, 34px);
+        font-weight: 850;
+        word-break: break-word;
     }
 
     .section-card {
         padding: 18px 20px;
         border-radius: 18px;
-        background: rgba(15,23,42,0.65);
-        border: 1px solid rgba(255,255,255,0.10);
+        background: var(--card-bg-soft);
+        border: 1px solid var(--border-soft);
         margin-bottom: 14px;
     }
 
     .question-card {
         padding: 22px;
-        border-radius: 20px;
-        background: rgba(15,23,42,0.72);
-        border: 1px solid rgba(255,255,255,0.10);
+        border-radius: 22px;
+        background: var(--card-bg);
+        border: 1px solid var(--border-soft);
         margin-bottom: 18px;
-        box-shadow: 0 14px 30px rgba(0,0,0,0.22);
+        box-shadow: 0 16px 34px rgba(0,0,0,0.26);
+    }
+
+    .question-card h2,
+    .question-card h3,
+    .question-card p,
+    .question-card b {
+        color: var(--text-main) !important;
+    }
+
+    .question-card code {
+        color: #bbf7d0 !important;
+        background: rgba(34, 197, 94, 0.10) !important;
+        padding: 3px 7px;
+        border-radius: 8px;
     }
 
     .correct-card {
-        border-left: 5px solid #22c55e;
+        border-left: 6px solid var(--green);
     }
 
     .wrong-card {
-        border-left: 5px solid #ef4444;
+        border-left: 6px solid var(--red);
     }
 
     .soft-divider {
         height: 1px;
-        background: rgba(255,255,255,0.10);
+        background: var(--border-soft);
         margin: 18px 0;
     }
 
     div.stButton > button {
         border-radius: 14px;
-        font-weight: 700;
+        font-weight: 800;
         min-height: 46px;
+        border: 1px solid rgba(255,255,255,0.16);
+        transition: all 0.18s ease;
+    }
+
+    div.stButton > button:hover {
+        transform: translateY(-1px);
+        box-shadow: 0 12px 24px rgba(0,0,0,0.22);
     }
 
     div[data-testid="stMetric"] {
-        background: rgba(15,23,42,0.70);
-        border: 1px solid rgba(255,255,255,0.10);
+        background: var(--card-bg-soft);
+        border: 1px solid var(--border-soft);
         padding: 18px;
         border-radius: 18px;
+    }
+
+    [data-testid="stDataFrame"] {
+        border-radius: 18px;
+        overflow: hidden;
+        border: 1px solid var(--border-soft);
+    }
+
+    [data-testid="stExpander"] {
+        background: var(--card-bg-soft);
+        border-radius: 16px;
+        border: 1px solid var(--border-soft);
+    }
+
+    .stAlert {
+        border-radius: 16px;
+    }
+
+    input,
+    textarea,
+    select {
+        color: var(--text-main) !important;
+    }
+
+    @media screen and (max-width: 768px) {
+        .block-container {
+            padding-left: 1rem;
+            padding-right: 1rem;
+            padding-top: 1.2rem;
+        }
+
+        .hero-card {
+            padding: 22px 20px;
+            border-radius: 20px;
+        }
+
+        .hero-title {
+            font-size: 30px;
+        }
+
+        .hero-subtitle {
+            font-size: 15px;
+        }
+
+        .metric-card {
+            margin-bottom: 12px;
+        }
+
+        .question-card {
+            padding: 18px;
+            border-radius: 18px;
+        }
+
+        .badge {
+            font-size: 12px;
+            padding: 7px 10px;
+        }
     }
     </style>
     """,
