@@ -1,6 +1,6 @@
 {
-  "session_id": "session_20260524_060828_135488",
-  "timestamp": "2026-05-24T06:08:28",
+  "session_id": "session_20260524_150227_929915",
+  "timestamp": "2026-05-24T15:02:27",
   "session_type": "cold_start",
   "sections": [
     5,
@@ -14,9 +14,9 @@
   },
   "weak_topics": [
     "Known Bases, Safehouses, and Operational Territory",
+    "Operational Tactics and Combat Doctrine",
     "Operational Territory",
-    "Sequential Suspension",
-    "Three-Two-One Rule"
+    "Sequential Suspension"
   ],
   "questions": [
     {
@@ -33,7 +33,7 @@
       "explanation": "The asset's formal combat doctrine, the Doctrine of Sequential Suspension (DSS), rests on six core principles.",
       "adaptive_reason": null,
       "generator": "ollama_llm",
-      "question_id": "q_4d59bef0",
+      "question_id": "q_3e50c606",
       "user_answer": "A",
       "is_correct": false,
       "clarification": "Wrong. Correct answer is B: Decisive resource. Clarification: The asset's formal combat doctrine, the Doctrine of Sequential Suspension (DSS), rests on six core principles."
@@ -41,62 +41,43 @@
     {
       "section_id": 5,
       "topic": "Tier-Based Engagement Protocols",
-      "question": "What is the minimum time required for a cell to perform a Tier 3 engagement protocol?",
+      "question": "What is the maximum number of activations allowed per 60-second window in the Three-Two-One Rule?",
       "options": {
-        "A": "30 minutes",
-        "B": "60 seconds",
-        "C": "12 minutes",
-        "D": "1 hour"
+        "A": "Three",
+        "B": "Two",
+        "C": "One",
+        "D": "Four"
       },
-      "correct_answer": "C",
-      "explanation": "PAMC Threat Tier definitions are detailed in §7.1. Engagement protocols differ as follows:",
+      "correct_answer": "A",
+      "explanation": "The asset's signature tactical heuristic, drilled into Cell Halcón operations and taught at Lima Academy: Three activations maximum per 60-second window.",
       "adaptive_reason": null,
       "generator": "ollama_llm",
-      "question_id": "q_0595e978",
-      "user_answer": "C",
+      "question_id": "q_fd897279",
+      "user_answer": "A",
       "is_correct": true,
       "clarification": "Correct."
     },
     {
       "section_id": 5,
-      "topic": "Tail-Momentum",
+      "topic": "Tail-Strike Technique",
       "question": "What is the result of using the Tail-Strike Technique?",
       "options": {
-        "A": "Adversary counter-prediction of trajectory becomes impossible.",
-        "B": "The strike delivered at full thrown velocity but from an arbitrary, target-adjacent location.",
-        "C": "The technique allows for a meaningful one-second window between release and engagement target acquisition.",
-        "D": "The asset's Cell Halcón training is enhanced."
+        "A": "A strike delivered at full thrown velocity but from a fixed location.",
+        "B": "An adversary counter-prediction of trajectory becomes nearly impossible.",
+        "C": "The technique allows for a one-second window between release and engagement target acquisition.",
+        "D": "The baton strikes the target with linear projectile motion alone."
       },
       "correct_answer": "B",
-      "explanation": "The Tail-Strike Technique exploits Tail Momentum to deliver compounded impacts that cannot be achieved by linear projectile motion alone.",
+      "explanation": "Adversary counter-prediction of trajectory becomes nearly impossible.",
       "adaptive_reason": null,
       "generator": "ollama_llm",
-      "question_id": "q_c3f07999",
+      "question_id": "q_fe52c572",
       "user_answer": "B",
       "is_correct": true,
       "clarification": "Correct."
     },
     {
-      "section_id": 5,
-      "topic": "Three-Two-One Rule",
-      "question": "What is the maximum number of activations allowed per 60-second window?",
-      "options": {
-        "A": "2",
-        "B": "3",
-        "C": "4",
-        "D": "5"
-      },
-      "correct_answer": "B",
-      "explanation": "The Three-Two-One Rule states that the asset's signature tactical heuristic is to maintain three activations maximum per 60-second window.",
-      "adaptive_reason": null,
-      "generator": "ollama_llm",
-      "question_id": "q_148285c7",
-      "user_answer": "A",
-      "is_correct": false,
-      "clarification": "Wrong. Correct answer is B: 3. Clarification: The Three-Two-One Rule states that the asset's signature tactical heuristic is to maintain three activations maximum per 60-second window."
-    },
-    {
-      "question_id": "q_3583933c",
+      "question_id": "q_7f22e293",
       "section_id": 5,
       "topic": "Operational Tactics and Combat Doctrine",
       "question": "According to Section 5, which statement best matches the topic 'Operational Tactics and Combat Doctrine'?",
@@ -110,6 +91,25 @@
       "explanation": "It is now PAMC- recognized doctrine for Class A-2 (Targeted) operatives and forms part of the standard curriculum at the Lima Operational Academy.",
       "adaptive_reason": null,
       "generator": "fallback_rule_based",
+      "user_answer": "B",
+      "is_correct": false,
+      "clarification": "Wrong. Correct answer is A: It is now PAMC- recognized doctrine for Class A-2 (Targeted) operatives and forms part of the standard curriculum at the Lima Operational Academy.. Clarification: It is now PAMC- recognized doctrine for Class A-2 (Targeted) operatives and forms part of the standard curriculum at the Lima Operational Academy."
+    },
+    {
+      "question_id": "q_da0d9388",
+      "section_id": 5,
+      "topic": "Operational Tactics and Combat Doctrine",
+      "question": "In Section 5, what is the most accurate detail about 'Operational Tactics and Combat Doctrine'?",
+      "options": {
+        "A": "A single suspension rarely wins an engagement; ordered chains of three define the doctrine.",
+        "B": "It only identifies a location name without any function.",
+        "C": "It describes an unrelated administrative process.",
+        "D": "It is mainly a civilian biography detail."
+      },
+      "correct_answer": "A",
+      "explanation": "A single suspension rarely wins an engagement; ordered chains of three define the doctrine.",
+      "adaptive_reason": null,
+      "generator": "fallback_rule_based",
       "user_answer": "A",
       "is_correct": true,
       "clarification": "Correct."
@@ -117,19 +117,19 @@
     {
       "section_id": 8,
       "topic": "Safehouses",
-      "question": "How many formally maintained safehouses does the asset have within her operational territory?",
+      "question": "How many formally maintained safehouses does the asset have access to within her operational territory?",
       "options": {
-        "A": "3",
-        "B": "5",
-        "C": "7",
-        "D": "9"
+        "A": "5",
+        "B": "3",
+        "C": "4",
+        "D": "2"
       },
-      "correct_answer": "B",
-      "explanation": "The asset has access to five formally maintained safehouses.",
+      "correct_answer": "A",
+      "explanation": "The asset has 5 formally maintained safehouses.",
       "adaptive_reason": null,
       "generator": "ollama_llm",
-      "question_id": "q_597116ac",
-      "user_answer": "B",
+      "question_id": "q_47c2a824",
+      "user_answer": "A",
       "is_correct": true,
       "clarification": "Correct."
     },
@@ -144,16 +144,16 @@
         "D": "Ecuador"
       },
       "correct_answer": "D",
-      "explanation": "The asset's authorized operational territory does not include Ecuador.",
+      "explanation": "Easter Island is restricted, and Ecuador only has access to a portion of its territory.",
       "adaptive_reason": null,
       "generator": "ollama_llm",
-      "question_id": "q_f4c904eb",
+      "question_id": "q_9233680a",
       "user_answer": "A",
       "is_correct": false,
-      "clarification": "Wrong. Correct answer is D: Ecuador. Clarification: The asset's authorized operational territory does not include Ecuador."
+      "clarification": "Wrong. Correct answer is D: Ecuador. Clarification: Easter Island is restricted, and Ecuador only has access to a portion of its territory."
     },
     {
-      "question_id": "q_a99a5a08",
+      "question_id": "q_d9ac125a",
       "section_id": 8,
       "topic": "Safehouse Provisioning",
       "question": "According to Section 8, which statement best matches the topic 'Safehouse Provisioning'?",
@@ -172,7 +172,7 @@
       "clarification": "Correct."
     },
     {
-      "question_id": "q_c8c3b9ee",
+      "question_id": "q_4ec5e9cd",
       "section_id": 8,
       "topic": "Known Bases, Safehouses, and Operational Territory",
       "question": "According to Section 8, which statement best matches the topic 'Known Bases, Safehouses, and Operational Territory'?",
@@ -191,7 +191,7 @@
       "clarification": "Correct."
     },
     {
-      "question_id": "q_1839c63b",
+      "question_id": "q_56f2253b",
       "section_id": 8,
       "topic": "Known Bases, Safehouses, and Operational Territory",
       "question": "In Section 8, what is the most accurate detail about 'Known Bases, Safehouses, and Operational Territory'?",
